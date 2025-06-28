@@ -1,0 +1,837 @@
+<!-- templates/converter/contact_us.html -->
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - JPG to PDF Converter Support | jpg2pdf.at{% endblock %}
+{% block meta_title %}Contact Us - JPG to PDF Converter Support | jpg2pdf.at{% endblock %}
+{% block meta_description %}Contact jpg2pdf.at for support with JPG to PDF conversion, feedback, or questions. Get help with our free online JPG to PDF converter service.{% endblock %}
+{% block meta_keywords %}contact us, jpg to pdf support, help, jpg2pdf.at, customer service, feedback{% endblock %}
+
+{% block content %}
+<style>
+    .contact-container {
+        max-width: 1100px;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    
+    .contact-form-section {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .contact-info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .section-header {
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+    
+    .form-container {
+        padding: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+    
+    .form-input,
+    .form-textarea,
+    .form-select {
+        width: 100%;
+        padding: 0.875rem;
+        border: 2px solid #e9ecef;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        font-family: inherit;
+    }
+    
+    .form-input:focus,
+    .form-textarea:focus,
+    .form-select:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+    
+    .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+    .form-submit {
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        color: white;
+        border: none;
+        padding: 0.875rem 2rem;
+        border-radius: 25px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .form-submit::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+    
+    .form-submit:hover::before {
+        left: 100%;
+    }
+    
+    .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+    }
+    
+    .form-submit:disabled {
+        background: #6c757d;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .info-card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        border: 1px solid #e9ecef;
+    }
+    
+    .info-card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .info-card-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .info-card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #343a40;
+        margin: 0;
+    }
+    
+    .info-card-content {
+        color: #495057;
+        line-height: 1.6;
+    }
+    
+    .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f8f9fa;
+    }
+    
+    .contact-method:last-child {
+        border-bottom: none;
+    }
+    
+    .contact-method-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .contact-method-info h4 {
+        margin: 0 0 0.25rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+    
+    .contact-method-info p {
+        margin: 0;
+        color: #495057;
+        font-size: 0.9rem;
+    }
+    
+    .contact-method-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .contact-method-info a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    
+    .faq-section {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-top: 2rem;
+        grid-column: 1 / -1;
+    }
+    
+    .faq-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .faq-item {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        border: 1px solid #e9ecef;
+    }
+    
+    .faq-question {
+        font-weight: 600;
+        color: #007bff;
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+    }
+    
+    .faq-answer {
+        color: #495057;
+        line-height: 1.6;
+        font-size: 0.9rem;
+    }
+    
+    .response-info {
+        background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+        border: 1px solid #28a745;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .response-info h4 {
+        color: #155724;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .response-info p {
+        color: #155724;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    
+    .alert {
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        display: none;
+    }
+    
+    .alert.show {
+        display: block;
+    }
+    
+    .alert-success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    
+    .alert-error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .contact-container {
+            grid-template-columns: 1fr;
+            margin: 1rem;
+            gap: 1.5rem;
+        }
+        
+        .section-header {
+            padding: 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+        }
+        
+        .form-container,
+        .info-card,
+        .faq-section {
+            padding: 1.5rem;
+        }
+        
+        .faq-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .contact-container {
+            margin: 0.5rem;
+        }
+        
+        .section-header {
+            padding: 1rem;
+        }
+        
+        .form-container,
+        .info-card,
+        .faq-section {
+            padding: 1rem;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+        }
+    }
+</style>
+
+<div class="contact-container">
+    <!-- Contact Form Section -->
+    <div class="contact-form-section">
+        <div class="section-header">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="section-subtitle">Get support for your JPG to PDF conversion needs</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="alert alert-success" id="successAlert">
+                <strong>Message Sent!</strong> Thank you for contacting us. We'll respond within 24 hours.
+            </div>
+            
+            <div class="alert alert-error" id="errorAlert">
+                <strong>Error:</strong> <span id="errorMessage"></span>
+            </div>
+            
+            <form id="contactForm" action="#" method="post">
+                {% csrf_token %}
+                
+                <div class="form-group">
+                    <label for="inquiry_type" class="form-label">Inquiry Type *</label>
+                    <select id="inquiry_type" name="inquiry_type" class="form-select" required>
+                        <option value="">Select inquiry type...</option>
+                        <option value="technical_support">Technical Support - JPG to PDF Issues</option>
+                        <option value="feature_request">Feature Request</option>
+                        <option value="bug_report">Bug Report</option>
+                        <option value="privacy_question">Privacy Question</option>
+                        <option value="business_inquiry">Business Inquiry</option>
+                        <option value="feedback">General Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject *</label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="Brief description of your inquiry" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Please provide detailed information about your question or issue. For technical problems, include your browser type and device information." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            
+            <div class="response-info">
+                <h4>📧 Quick Response Guarantee</h4>
+                <p>We typically respond to all inquiries within 24 hours. For urgent technical issues, we aim to respond within 4 hours during business hours.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Information Section -->
+    <div class="contact-info-section">
+        <!-- Contact Methods Card -->
+        <div class="info-card">
+            <div class="info-card-header">
+                <div class="info-card-icon" style="background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <h2 class="info-card-title">Get in Touch</h2>
+            </div>
+            <div class="info-card-content">
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>General Support</h4>
+                        <p><a href="mailto:support@jpg2pdf.at">support@jpg2pdf.at</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Privacy & Legal</h4>
+                        <p><a href="mailto:privacy@jpg2pdf.at">privacy@jpg2pdf.at</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Business Inquiries</h4>
+                        <p><a href="mailto:business@jpg2pdf.at">business@jpg2pdf.at</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-globe" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Website</h4>
+                        <p><a href="https://jpg2pdf.at" target="_blank">jpg2pdf.at</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Response Times Card -->
+        <div class="info-card">
+            <div class="info-card-header">
+                <div class="info-card-icon" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                </div>
+                <h2 class="info-card-title">Response Times</h2>
+            </div>
+            <div class="info-card-content">
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Technical Issues</h4>
+                        <p>4 hours during business hours</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-envelope-open" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>General Inquiries</h4>
+                        <p>Within 24 hours</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-balance-scale" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Legal Matters</h4>
+                        <p>Within 7 business days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service Status Card -->
+        <div class="info-card">
+            <div class="info-card-header">
+                <div class="info-card-icon" style="background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);">
+                    <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                </div>
+                <h2 class="info-card-title">Service Status</h2>
+            </div>
+            <div class="info-card-content">
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>JPG to PDF Converter</h4>
+                        <p style="color: #28a745; font-weight: 600;">✅ Operational</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-server" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>File Processing</h4>
+                        <p style="color: #28a745; font-weight: 600;">✅ Normal</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-method-icon">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                    </div>
+                    <div class="contact-method-info">
+                        <h4>Download Service</h4>
+                        <p style="color: #28a745; font-weight: 600;">✅ Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">How can I get help with JPG to PDF conversion issues?</div>
+                <div class="faq-answer">For technical issues with our JPG to PDF converter, select "Technical Support" from the inquiry type and provide details about your browser, device, and the specific problem you're experiencing.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long does it take to get a response?</div>
+                <div class="faq-answer">We respond to most inquiries within 24 hours. Technical support requests are prioritized and typically answered within 4 hours during business hours (9 AM - 6 PM CET).</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I suggest new features for the JPG to PDF converter?</div>
+                <div class="faq-answer">Absolutely! We love hearing from users. Select "Feature Request" and tell us what functionality would improve your JPG to PDF conversion experience.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What information should I include in bug reports?</div>
+                <div class="faq-answer">Please include your browser type and version, device information, steps to reproduce the issue, and any error messages you saw during JPG to PDF conversion.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you provide phone support?</div>
+                <div class="faq-answer">Currently, we provide support exclusively through email to ensure detailed documentation and quick resolution of your JPG to PDF conversion issues.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I report privacy concerns?</div>
+                <div class="faq-answer">For privacy-related questions or concerns about how we handle your data during JPG to PDF conversion, contact us at privacy@jpg2pdf.at or select "Privacy Question" in the form.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successAlert = document.getElementById('successAlert');
+    const errorAlert = document.getElementById('errorAlert');
+    const errorMessage = document.getElementById('errorMessage');
+    
+    // Form submission handler
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Hide any existing alerts
+        successAlert.classList.remove('show');
+        errorAlert.classList.remove('show');
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        
+        // Simulate form submission (replace with actual endpoint)
+        setTimeout(() => {
+            // Simulate success (replace with actual API call)
+            const success = Math.random() > 0.1; // 90% success rate for demo
+            
+            if (success) {
+                // Show success message
+                successAlert.classList.add('show');
+                contactForm.reset();
+                
+                // Scroll to success message
+                successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Track form submission
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'contact_form_submit', {
+                        'event_category': 'engagement',
+                        'event_label': formData.get('inquiry_type'),
+                        'value': 1
+                    });
+                }
+            } else {
+                // Show error message
+                errorMessage.textContent = 'Failed to send message. Please try again or contact us directly at support@jpg2pdf.at';
+                errorAlert.classList.add('show');
+                
+                // Scroll to error message
+                errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            
+            // Restore button state
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            
+        }, 2000); // Simulate network delay
+    });
+    
+    // Form validation enhancements
+    const requiredFields = ['inquiry_type', 'name', 'email', 'subject', 'message'];
+    
+    requiredFields.forEach(fieldName => {
+        const field = document.getElementById(fieldName);
+        if (field) {
+            field.addEventListener('blur', validateField);
+            field.addEventListener('input', clearValidationError);
+        }
+    });
+    
+    function validateField(e) {
+        const field = e.target;
+        const value = field.value.trim();
+        
+        // Remove existing error styling
+        field.classList.remove('error');
+        
+        // Validate based on field type
+        let isValid = true;
+        let errorMsg = '';
+        
+        if (!value) {
+            isValid = false;
+            errorMsg = 'This field is required';
+        } else if (field.type === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(value)) {
+                isValid = false;
+                errorMsg = 'Please enter a valid email address';
+            }
+        } else if (field.name === 'message' && value.length < 10) {
+            isValid = false;
+            errorMsg = 'Please provide more details (minimum 10 characters)';
+        }
+        
+        if (!isValid) {
+            field.classList.add('error');
+            showFieldError(field, errorMsg);
+        }
+    }
+    
+    function clearValidationError(e) {
+        const field = e.target;
+        field.classList.remove('error');
+        removeFieldError(field);
+    }
+    
+    function showFieldError(field, message) {
+        // Remove existing error message
+        removeFieldError(field);
+        
+        // Create error message element
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'field-error';
+        errorDiv.textContent = message;
+        errorDiv.style.cssText = `
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            font-weight: 500;
+        `;
+        
+        // Add error styling to field
+        field.style.borderColor = '#dc3545';
+        field.style.boxShadow = '0 0 0 3px rgba(220, 53, 69, 0.1)';
+        
+        // Insert error message after the field
+        field.parentNode.appendChild(errorDiv);
+    }
+    
+    function removeFieldError(field) {
+        const errorDiv = field.parentNode.querySelector('.field-error');
+        if (errorDiv) {
+            errorDiv.remove();
+        }
+        
+        // Reset field styling
+        field.style.borderColor = '';
+        field.style.boxShadow = '';
+    }
+    
+    // Auto-hide alerts after 5 seconds
+    function autoHideAlert(alert) {
+        setTimeout(() => {
+            if (alert.classList.contains('show')) {
+                alert.classList.remove('show');
+            }
+        }, 5000);
+    }
+    
+    // Enhanced form experience
+    const inquirySelect = document.getElementById('inquiry_type');
+    const subjectField = document.getElementById('subject');
+    const messageField = document.getElementById('message');
+    
+    // Auto-populate subject based on inquiry type
+    inquirySelect.addEventListener('change', function() {
+        const selectedValue = this.value;
+        const selectedText = this.options[this.selectedIndex].text;
+        
+        if (selectedValue && !subjectField.value) {
+            subjectField.value = selectedText.replace(' - JPG to PDF Issues', '');
+        }
+        
+        // Add helpful placeholder text for message field
+        const placeholders = {
+            'technical_support': 'Please describe the technical issue you\'re experiencing with JPG to PDF conversion. Include your browser type, device information, and steps to reproduce the problem.',
+            'feature_request': 'What new feature would you like to see in our JPG to PDF converter? Please describe how it would improve your experience.',
+            'bug_report': 'Please describe the bug you encountered. Include steps to reproduce, expected behavior, and actual behavior during JPG to PDF conversion.',
+            'privacy_question': 'What privacy-related question do you have about our JPG to PDF converter service?',
+            'business_inquiry': 'Please provide details about your business inquiry or partnership opportunity.',
+            'feedback': 'We\'d love to hear your feedback about our JPG to PDF converter service!',
+            'other': 'Please provide detailed information about your inquiry.'
+        };
+        
+        if (placeholders[selectedValue]) {
+            messageField.placeholder = placeholders[selectedValue];
+        }
+    });
+    
+    // Character counter for message field
+    const maxLength = 2000;
+    const counterDiv = document.createElement('div');
+    counterDiv.className = 'char-counter';
+    counterDiv.style.cssText = `
+        font-size: 0.8rem;
+        color: #6c757d;
+        text-align: right;
+        margin-top: 0.25rem;
+    `;
+    
+    messageField.parentNode.appendChild(counterDiv);
+    
+    function updateCharCounter() {
+        const length = messageField.value.length;
+        counterDiv.textContent = `${length}/${maxLength} characters`;
+        
+        if (length > maxLength * 0.9) {
+            counterDiv.style.color = '#ffc107';
+        } else if (length > maxLength) {
+            counterDiv.style.color = '#dc3545';
+        } else {
+            counterDiv.style.color = '#6c757d';
+        }
+    }
+    
+    messageField.addEventListener('input', updateCharCounter);
+    updateCharCounter();
+});
+
+// Add CSS for error states
+const style = document.createElement('style');
+style.textContent = `
+    .form-input.error,
+    .form-textarea.error,
+    .form-select.error {
+        border-color: #dc3545 !important;
+        box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1) !important;
+    }
+    
+    .field-error {
+        animation: slideDown 0.3s ease-out;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(style);
+</script>
+
+{% endblock %}

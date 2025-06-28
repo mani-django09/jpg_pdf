@@ -1,0 +1,634 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>{% block title %}JPG to PDF Converter - Convert Images to PDF Online Free{% endblock %}</title>
+    <meta name="title" content="{% block meta_title %}JPG to PDF Converter - Convert Images to PDF Online Free{% endblock %}">
+    <meta name="description" content="{% block meta_description %}Convert JPG, PNG, GIF images to PDF online for free. Fast, secure, and easy-to-use image to PDF converter. No registration required.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}jpg to pdf, png to pdf, image to pdf, convert images, pdf converter, online converter, free converter{% endblock %}">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="JPG2PDF Converter">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{% block og_url %}{{ request.build_absolute_uri }}{% endblock %}">
+    <meta property="og:title" content="{% block og_title %}JPG to PDF Converter - Convert Images to PDF Online Free{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Convert JPG, PNG, GIF images to PDF online for free. Fast, secure, and easy-to-use image to PDF converter.{% endblock %}">
+    <meta property="og:site_name" content="JPG2PDF Converter">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{% block twitter_url %}{{ request.build_absolute_uri }}{% endblock %}">
+    <meta property="twitter:title" content="{% block twitter_title %}JPG to PDF Converter - Convert Images to PDF Online Free{% endblock %}">
+    <meta property="twitter:description" content="{% block twitter_description %}Convert JPG, PNG, GIF images to PDF online for free. Fast, secure, and easy-to-use image to PDF converter.{% endblock %}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{% block canonical %}{{ request.build_absolute_uri }}{% endblock %}">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JPG to PDF Converter",
+        "description": "Convert JPG, PNG, GIF images to PDF online for free. Fast, secure, and easy-to-use image to PDF converter.",
+        "url": "{{ request.build_absolute_uri }}",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "JPG to PDF conversion",
+            "PNG to PDF conversion", 
+            "Batch conversion",
+            "Free online tool",
+            "No registration required",
+            "Secure processing"
+        ]
+    }
+    </script>
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #007bff;
+            --primary-dark: #0056b3;
+            --success-color: #28a745;
+            --success-dark: #218838;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #17a2b8;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --secondary-color: #6c757d;
+            --white: #ffffff;
+            --black: #000000;
+            
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            --box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            --box-shadow-lg: 0 4px 20px rgba(0,0,0,0.15);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Header Styles */
+        .header {
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            color: var(--primary-dark);
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--danger-color);
+        }
+
+        .logo-text {
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+        }
+
+        .nav-link {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .mobile-menu-btn:hover {
+            background-color: var(--light-color);
+        }
+
+        /* Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: var(--box-shadow-lg);
+            border-top: 1px solid #e9ecef;
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        .mobile-nav-link {
+            display: block;
+            color: var(--dark-color);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px solid #f8f9fa;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-link:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Main Content */
+        .main {
+            min-height: calc(100vh - 70px - 200px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+
+        .d-none { display: none; }
+        .d-block { display: block; }
+        .d-flex { display: flex; }
+        .d-grid { display: grid; }
+
+        .mb-0 { margin-bottom: 0; }
+        .mb-1 { margin-bottom: 0.25rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-3 { margin-bottom: 1rem; }
+        .mb-4 { margin-bottom: 1.5rem; }
+        .mb-5 { margin-bottom: 3rem; }
+
+        .mt-0 { margin-top: 0; }
+        .mt-1 { margin-top: 0.25rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-3 { margin-top: 1rem; }
+        .mt-4 { margin-top: 1.5rem; }
+        .mt-5 { margin-top: 3rem; }
+
+        .p-0 { padding: 0; }
+        .p-1 { padding: 0.25rem; }
+        .p-2 { padding: 0.5rem; }
+        .p-3 { padding: 1rem; }
+        .p-4 { padding: 1.5rem; }
+        .p-5 { padding: 3rem; }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #adb5bd;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 1rem;
+                height: 60px;
+            }
+            
+            .logo {
+                font-size: 1.3rem;
+            }
+            
+            .logo-icon {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header-container {
+                padding: 0 0.75rem;
+            }
+            
+            .container {
+                padding: 0 0.75rem;
+            }
+            
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Performance optimizations */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Accessibility improvements */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1001;
+            border-radius: var(--border-radius);
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Print styles */
+        @media print {
+            .header,
+            .footer,
+            .mobile-menu-btn {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+        }
+
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        button:focus,
+        a:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+    </style>
+
+    <!-- Performance monitoring -->
+    <script>
+        // Mark the start of page load
+        if (window.performance && window.performance.mark) {
+            window.performance.mark('page-start');
+        }
+    </script>
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <a href="{% url 'converter:home' %}" class="logo" aria-label="JPG2PDF Converter Home">
+                <i class="fas fa-file-pdf logo-icon" aria-hidden="true"></i>
+                <span class="logo-text">JPG2PDF</span>
+            </a>
+            
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+    <ul class="nav-links">
+        <li><a href="{% url 'converter:home' %}" class="nav-link">Home</a></li>
+        <li><a href="{% url 'converter:home' %}#features" class="nav-link">Features</a></li>
+        <li><a href="{% url 'converter:home' %}#faq" class="nav-link">FAQ</a></li>
+        <li><a href="{% url 'converter:contact_us' %}" class="nav-link">Contact</a></li>
+    </ul>
+    
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+                  <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="{% url 'converter:home' %}" class="mobile-nav-link">Home</a></li>
+            <li><a href="{% url 'converter:home' %}#features" class="mobile-nav-link">Features</a></li>
+            <li><a href="{% url 'converter:home' %}#faq" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="{% url 'converter:contact_us' %}" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content" role="main">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JPG2PDF Converter</h3>
+                    <p>Convert your images to PDF format quickly and securely. Our online tool is free, fast, and works on all devices.</p>
+                    <p>No registration required. Your privacy is protected.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tools</h3>
+                    <a href="https://smallpdf.us/jpg-to-pdf">JPG to PDF</a>
+                    <a href="https://smallpdf.us/word-to-pdf">Word to PDF</a>
+                    <a href="https://smallpdf.us/word-to-pdf">Compress pdf</a>
+                    <a href="https://smallpdf.us/merge-pdf">Merge PDF</a>
+                </div>
+                
+                <div class="footer-section">
+                    
+                    <a href="privacy-policy">Privacy Policy</a>
+                    <a href="terms-of-service">Terms of Service</a>
+                    <a href="contact-us">Contact Us</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <a href="https://x.com/" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                    <a href="https://www.facebook.com/" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                    <a href="https://www.linkedin.com/" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; {% now "Y" %} JPG2PDF Converter. All rights reserved. | Fast, Free, and Secure Image to PDF Conversion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // CSRF Token
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        const csrftoken = getCookie('csrftoken');
+
+        // Mobile Menu Toggle
+       document.addEventListener('DOMContentLoaded', function() {
+    // Enhanced contact form submission (only for contact page)
+    if (window.location.pathname.includes('contact')) {
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = document.getElementById('submitBtn');
+                const successAlert = document.getElementById('successAlert');
+                const errorAlert = document.getElementById('errorAlert');
+                const errorMessage = document.getElementById('errorMessage');
+                
+                // Show loading state
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                // Hide alerts
+                if (successAlert) successAlert.classList.remove('show');
+                if (errorAlert) errorAlert.classList.remove('show');
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                
+                // Submit form with correct URL
+                fetch('/contact/submit/', {  // Make sure this matches your URL pattern
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': getCookie('csrftoken')
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        if (successAlert) {
+                            // Update success message
+                            successAlert.innerHTML = `
+                                <strong>Message Sent!</strong> ${data.message || 'Thank you for contacting us. We will respond within 24 hours.'}
+                            `;
+                            successAlert.classList.add('show');
+                            successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                        contactForm.reset();
+                        
+                        // Track successful submission
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'contact_form_submit', {
+                                'event_category': 'engagement',
+                                'event_label': formData.get('inquiry_type'),
+                                'value': 1
+                            });
+                        }
+                    } else {
+                        throw new Error(data.error || 'Failed to send message');
+                    }
+                })
+                .catch(error => {
+                    console.error('Contact form error:', error);
+                    if (errorAlert && errorMessage) {
+                        errorMessage.textContent = error.message || 'Failed to send message. Please try again or contact us directly at support@jpg2pdf.at';
+                        errorAlert.classList.add('show');
+                        errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+            });
+        }
+    }
+});
+</script>
+</body>
+</html>

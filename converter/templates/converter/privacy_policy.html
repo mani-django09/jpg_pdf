@@ -1,0 +1,540 @@
+<!-- templates/converter/privacy_policy.html -->
+{% extends 'base.html' %}
+
+{% block title %}Privacy Policy - JPG to PDF Converter | jpg2pdf.at{% endblock %}
+{% block meta_title %}Privacy Policy - JPG to PDF Converter | jpg2pdf.at{% endblock %}
+{% block meta_description %}Privacy Policy for jpg2pdf.at JPG to PDF converter. Learn how we protect your data during JPG to PDF conversion. Secure, private, and transparent.{% endblock %}
+{% block meta_keywords %}privacy policy, jpg to pdf privacy, data protection, jpg2pdf.at, secure conversion{% endblock %}
+
+{% block content %}
+<style>
+    .legal-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .legal-header {
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    
+    .legal-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .legal-subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+    }
+    
+    .legal-date {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    
+    .legal-content {
+        padding: 3rem 2rem;
+    }
+    
+    .legal-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    .legal-section h2 {
+        color: #007bff;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e9ecef;
+    }
+    
+    .legal-section h3 {
+        color: #343a40;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        margin-top: 1.5rem;
+    }
+    
+    .legal-section p {
+        color: #495057;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .legal-section ul {
+        color: #495057;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    
+    .legal-section li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .highlight-box {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+        border: 1px solid #007bff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .highlight-box h4 {
+        color: #007bff;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .contact-info {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-info h4 {
+        color: #343a40;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .contact-info p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    
+    .table-of-contents {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .table-of-contents h3 {
+        color: #343a40;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .table-of-contents ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .table-of-contents li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .table-of-contents a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .table-of-contents a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .legal-container {
+            margin: 1rem;
+            border-radius: 8px;
+        }
+        
+        .legal-header {
+            padding: 2rem 1.5rem;
+        }
+        
+        .legal-title {
+            font-size: 2rem;
+        }
+        
+        .legal-content {
+            padding: 2rem 1.5rem;
+        }
+        
+        .legal-section h2 {
+            font-size: 1.3rem;
+        }
+        
+        .highlight-box,
+        .contact-info,
+        .table-of-contents {
+            padding: 1rem;
+        }
+    }
+</style>
+
+<div class="legal-container">
+    <div class="legal-header">
+        <h1 class="legal-title">Privacy Policy</h1>
+        <p class="legal-subtitle">jpg2pdf.at - JPG to PDF Converter</p>
+        <p class="legal-date">Last Updated: {{ "now"|date:"F j, Y" }}</p>
+    </div>
+    
+    <div class="legal-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#information-we-collect">1. Information We Collect</a></li>
+                <li><a href="#how-we-use-information">2. How We Use Your Information</a></li>
+                <li><a href="#data-security">3. Data Security</a></li>
+                <li><a href="#file-handling">4. File Handling and Storage</a></li>
+                <li><a href="#cookies">5. Cookies and Tracking</a></li>
+                <li><a href="#third-party-services">6. Third-Party Services</a></li>
+                <li><a href="#data-retention">7. Data Retention</a></li>
+                <li><a href="#your-rights">8. Your Privacy Rights</a></li>
+                <li><a href="#children-privacy">9. Children's Privacy</a></li>
+                <li><a href="#international-transfers">10. International Data Transfers</a></li>
+                <li><a href="#policy-changes">11. Changes to This Policy</a></li>
+                <li><a href="#contact-us">12. Contact Information</a></li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>🔒 Your Privacy is Our Priority</h4>
+            <p><strong>jpg2pdf.at</strong> is committed to protecting your privacy. Our JPG to PDF converter is designed with privacy by design principles. We process your files locally, automatically delete them after conversion, and never store your personal data unnecessarily.</p>
+        </div>
+        
+        <div class="legal-section" id="information-we-collect">
+            <h2>1. Information We Collect</h2>
+            
+            <h3>1.1 Files You Upload</h3>
+            <p>When you use our JPG to PDF converter, we temporarily process:</p>
+            <ul>
+                <li>JPG, PNG, GIF, and other image files you upload for PDF conversion</li>
+                <li>File metadata (file name, size, format) necessary for conversion</li>
+                <li>Generated PDF files created from your images</li>
+            </ul>
+            
+            <h3>1.2 Technical Information</h3>
+            <p>We automatically collect limited technical information to ensure our JPG to PDF converter works properly:</p>
+            <ul>
+                <li>IP address (for security and abuse prevention)</li>
+                <li>Browser type and version</li>
+                <li>Device type (desktop, mobile, tablet)</li>
+                <li>Operating system</li>
+                <li>Referring website (if any)</li>
+                <li>Pages visited on jpg2pdf.at</li>
+                <li>Conversion statistics (anonymous)</li>
+            </ul>
+            
+            <h3>1.3 Information We Do NOT Collect</h3>
+            <p>We do not collect:</p>
+            <ul>
+                <li>Personal information like names, emails, or phone numbers</li>
+                <li>Account information (no registration required)</li>
+                <li>Payment information (our service is free)</li>
+                <li>Content of your images or PDF files</li>
+                <li>Detailed browsing history</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="how-we-use-information">
+            <h2>2. How We Use Your Information</h2>
+            
+            <h3>2.1 Primary Purposes</h3>
+            <p>We use your information solely for:</p>
+            <ul>
+                <li><strong>JPG to PDF Conversion:</strong> Processing your images to create PDF documents</li>
+                <li><strong>Service Delivery:</strong> Providing you with converted PDF files for download</li>
+                <li><strong>Technical Operation:</strong> Ensuring our converter works properly across different devices</li>
+                <li><strong>Security:</strong> Preventing abuse and protecting against malicious uploads</li>
+            </ul>
+            
+            <h3>2.2 Service Improvement</h3>
+            <p>We may use anonymous, aggregated data to:</p>
+            <ul>
+                <li>Improve our JPG to PDF conversion quality</li>
+                <li>Optimize website performance</li>
+                <li>Understand usage patterns (without identifying individuals)</li>
+                <li>Fix technical issues and bugs</li>
+            </ul>
+            
+            <h3>2.3 Legal Compliance</h3>
+            <p>We may process information when required by law or to:</p>
+            <ul>
+                <li>Comply with legal obligations</li>
+                <li>Respond to valid legal requests</li>
+                <li>Protect our rights and interests</li>
+                <li>Ensure user safety</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="data-security">
+            <h2>3. Data Security</h2>
+            
+            <div class="highlight-box">
+                <h4>🛡️ Enterprise-Grade Security</h4>
+                <p>Your files are protected with the same security standards used by major technology companies.</p>
+            </div>
+            
+            <h3>3.1 Encryption</h3>
+            <ul>
+                <li><strong>HTTPS Encryption:</strong> All data transfers use SSL/TLS encryption</li>
+                <li><strong>In-Transit Protection:</strong> Your files are encrypted during upload and download</li>
+                <li><strong>Secure Processing:</strong> Files are processed in a secure, isolated environment</li>
+            </ul>
+            
+            <h3>3.2 Access Controls</h3>
+            <ul>
+                <li>Limited access to systems handling your files</li>
+                <li>Regular security audits and monitoring</li>
+                <li>Automated threat detection and prevention</li>
+                <li>Secure server infrastructure with regular updates</li>
+            </ul>
+            
+            <h3>3.3 Data Isolation</h3>
+            <ul>
+                <li>Each conversion session is isolated from others</li>
+                <li>No cross-contamination between user files</li>
+                <li>Secure temporary storage during processing</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="file-handling">
+            <h2>4. File Handling and Storage</h2>
+            
+            <div class="highlight-box">
+                <h4>⏰ Automatic File Deletion</h4>
+                <p>Your privacy is protected by our automatic file deletion system. All uploaded images and generated PDFs are permanently deleted within 24 hours.</p>
+            </div>
+            
+            <h3>4.1 File Processing</h3>
+            <ul>
+                <li>Files are processed locally on our secure servers</li>
+                <li>No third-party processing or cloud storage</li>
+                <li>Conversion happens in real-time</li>
+                <li>Files are never analyzed for content or shared</li>
+            </ul>
+            
+            <h3>4.2 Temporary Storage</h3>
+            <ul>
+                <li><strong>Upload Storage:</strong> Maximum 1 hour for processing</li>
+                <li><strong>PDF Generation:</strong> Immediate processing and availability</li>
+                <li><strong>Download Availability:</strong> PDFs available for 24 hours maximum</li>
+                <li><strong>Automatic Cleanup:</strong> All files deleted after 24 hours regardless of download status</li>
+            </ul>
+            
+            <h3>4.3 File Access</h3>
+            <ul>
+                <li>Only you have access to your converted PDF via unique download link</li>
+                <li>No file browsing or search functionality</li>
+                <li>Links expire automatically</li>
+                <li>No file recovery possible after deletion</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="cookies">
+            <h2>5. Cookies and Tracking</h2>
+            
+            <h3>5.1 Essential Cookies</h3>
+            <p>We use minimal, essential cookies for:</p>
+            <ul>
+                <li><strong>Session Management:</strong> Maintaining your conversion session</li>
+                <li><strong>Security:</strong> CSRF protection and security features</li>
+                <li><strong>Functionality:</strong> Remembering your conversion preferences during your visit</li>
+            </ul>
+            
+            <h3>5.2 Analytics (Optional)</h3>
+            <p>With your consent, we may use:</p>
+            <ul>
+                <li>Google Analytics for anonymous usage statistics</li>
+                <li>Performance monitoring for service improvement</li>
+                <li>Error tracking to fix technical issues</li>
+            </ul>
+            
+            <h3>5.3 No Tracking Cookies</h3>
+            <p>We do NOT use:</p>
+            <ul>
+                <li>Advertising cookies</li>
+                <li>Social media tracking</li>
+                <li>Cross-site tracking</li>
+                <li>Behavioral profiling cookies</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="third-party-services">
+            <h2>6. Third-Party Services</h2>
+            
+            <h3>6.1 Service Providers</h3>
+            <p>We may use trusted third-party services for:</p>
+            <ul>
+                <li><strong>Hosting:</strong> Secure server infrastructure</li>
+                <li><strong>CDN:</strong> Content delivery for faster loading</li>
+                <li><strong>Analytics:</strong> Anonymous usage statistics (Google Analytics)</li>
+                <li><strong>Security:</strong> DDoS protection and security monitoring</li>
+            </ul>
+            
+            <h3>6.2 Data Processing Agreements</h3>
+            <ul>
+                <li>All third-party providers sign data processing agreements</li>
+                <li>GDPR-compliant service providers only</li>
+                <li>Limited data access on need-to-know basis</li>
+                <li>Regular compliance audits</li>
+            </ul>
+            
+            <h3>6.3 No Data Sharing</h3>
+            <p>We do NOT share your files or personal data with:</p>
+            <ul>
+                <li>Advertising companies</li>
+                <li>Data brokers</li>
+                <li>Social media platforms</li>
+                <li>Marketing companies</li>
+                <li>Other websites or services</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="data-retention">
+            <h2>7. Data Retention</h2>
+            
+            <h3>7.1 File Retention</h3>
+            <ul>
+                <li><strong>Uploaded Images:</strong> Deleted within 1-24 hours</li>
+                <li><strong>Generated PDFs:</strong> Deleted within 24 hours</li>
+                <li><strong>Temporary Data:</strong> Deleted immediately after conversion</li>
+                <li><strong>Error Logs:</strong> Deleted within 30 days (contain no personal data)</li>
+            </ul>
+            
+            <h3>7.2 Technical Data</h3>
+            <ul>
+                <li><strong>Server Logs:</strong> 30 days maximum (IP addresses anonymized after 7 days)</li>
+                <li><strong>Analytics Data:</strong> Anonymous, aggregated data only</li>
+                <li><strong>Security Logs:</strong> 90 days for abuse prevention</li>
+            </ul>
+            
+            <h3>7.3 Legal Retention</h3>
+            <p>We may retain data longer only when:</p>
+            <ul>
+                <li>Required by law</li>
+                <li>Necessary for legal proceedings</li>
+                <li>Essential for security investigations</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="your-rights">
+            <h2>8. Your Privacy Rights</h2>
+            
+            <h3>8.1 GDPR Rights (EU Users)</h3>
+            <p>Under GDPR, you have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request information about data we process</li>
+                <li><strong>Rectification:</strong> Correct inaccurate personal data</li>
+                <li><strong>Erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Portability:</strong> Receive your data in a structured format</li>
+                <li><strong>Objection:</strong> Object to certain types of processing</li>
+                <li><strong>Restriction:</strong> Limit how we process your data</li>
+            </ul>
+            
+            <h3>8.2 CCPA Rights (California Users)</h3>
+            <p>Under CCPA, you have the right to:</p>
+            <ul>
+                <li>Know what personal information we collect</li>
+                <li>Delete personal information we have collected</li>
+                <li>Opt-out of sale of personal information (we don't sell data)</li>
+                <li>Non-discrimination for exercising your rights</li>
+            </ul>
+            
+            <h3>8.3 How to Exercise Your Rights</h3>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:privacy@jpg2pdf.at">privacy@jpg2pdf.at</a></p>
+                <p>Response Time: Within 30 days</p>
+                <p>Verification: We may ask for identity verification for security purposes</p>
+            </div>
+        </div>
+        
+        <div class="legal-section" id="children-privacy">
+            <h2>9. Children's Privacy</h2>
+            
+            <p>jpg2pdf.at is committed to protecting children's privacy:</p>
+            <ul>
+                <li>Our service is not directed to children under 13</li>
+                <li>We do not knowingly collect personal information from children under 13</li>
+                <li>If we discover we have collected information from a child under 13, we will delete it immediately</li>
+                <li>Parents can contact us to request deletion of their child's information</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="international-transfers">
+            <h2>10. International Data Transfers</h2>
+            
+            <h3>10.1 Data Location</h3>
+            <ul>
+                <li>Our servers are located in secure data centers</li>
+                <li>Data processing occurs within the European Union when possible</li>
+                <li>Appropriate safeguards in place for any international transfers</li>
+            </ul>
+            
+            <h3>10.2 Transfer Safeguards</h3>
+            <ul>
+                <li>Standard Contractual Clauses (SCCs) with service providers</li>
+                <li>Adequacy decisions where applicable</li>
+                <li>Additional security measures for sensitive data</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="policy-changes">
+            <h2>11. Changes to This Privacy Policy</h2>
+            
+            <h3>11.1 Updates</h3>
+            <ul>
+                <li>We may update this policy to reflect service changes or legal requirements</li>
+                <li>Material changes will be prominently posted on our website</li>
+                <li>We will update the "Last Updated" date</li>
+                <li>Continued use of our service constitutes acceptance of changes</li>
+            </ul>
+            
+            <h3>11.2 Notification</h3>
+            <ul>
+                <li>Significant changes will be announced on our homepage</li>
+                <li>Users will have 30 days to review changes</li>
+                <li>Previous versions available upon request</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="contact-us">
+            <h2>12. Contact Information</h2>
+            
+            <div class="contact-info">
+                <h4>Privacy Questions & Requests</h4>
+                <p><strong>Email:</strong> <a href="mailto:privacy@jpg2pdf.at">privacy@jpg2pdf.at</a></p>
+                <p><strong>Website:</strong> <a href="https://jpg2pdf.at">jpg2pdf.at</a></p>
+                <p><strong>Response Time:</strong> We respond to privacy inquiries within 72 hours</p>
+                <p><strong>Data Protection Officer:</strong> Available for EU users upon request</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>🤝 We're Here to Help</h4>
+                <p>Have questions about your privacy or how we handle your data? Don't hesitate to reach out. We're committed to transparency and protecting your privacy rights.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,503 @@
+INFO 2025-06-14 23:06:19,398 autoreload 24692 16084 Watching for file changes with StatReloader
+INFO 2025-06-14 23:06:25,550 basehttp 24692 22684 "GET / HTTP/1.1" 200 62639
+WARNING 2025-06-14 23:06:26,218 basehttp 24692 22684 "GET /static/sw.js HTTP/1.1" 404 1942
+WARNING 2025-06-14 23:06:26,269 basehttp 24692 25720 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:06:31,834 views 24692 23892 Created conversion job 85e1d900-ab1f-4bfb-b9cd-80485dfae699 for file qr-code (2).png
+INFO 2025-06-14 23:06:31,843 views 24692 23892 Saved file to uploads/85e1d900-ab1f-4bfb-b9cd-80485dfae699_eaecfdf8.png
+INFO 2025-06-14 23:06:32,016 views 24692 23892 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\85e1d900-ab1f-4bfb-b9cd-80485dfae699_converted.pdf
+INFO 2025-06-14 23:06:32,033 views 24692 23892 Conversion completed for job 85e1d900-ab1f-4bfb-b9cd-80485dfae699
+INFO 2025-06-14 23:06:32,037 basehttp 24692 23892 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:06:35,612 views 24692 8572 File 85e1d900-ab1f-4bfb-b9cd-80485dfae699_converted.pdf downloaded successfully
+INFO 2025-06-14 23:06:35,617 basehttp 24692 8572 "GET /download/85e1d900-ab1f-4bfb-b9cd-80485dfae699/ HTTP/1.1" 200 80822
+INFO 2025-06-14 23:11:59,734 basehttp 24692 25548 "GET / HTTP/1.1" 200 65581
+WARNING 2025-06-14 23:12:00,558 basehttp 24692 25928 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:12:13,309 views 24692 20600 Created conversion job 0eddda77-0540-47da-b991-fdec69d838ff for file qr-code (1).png
+INFO 2025-06-14 23:12:13,325 views 24692 20600 Saved file to uploads/0eddda77-0540-47da-b991-fdec69d838ff_29c044f4.png
+INFO 2025-06-14 23:12:13,477 views 24692 20600 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\0eddda77-0540-47da-b991-fdec69d838ff_converted.pdf
+INFO 2025-06-14 23:12:13,508 views 24692 20600 Conversion completed for job 0eddda77-0540-47da-b991-fdec69d838ff
+INFO 2025-06-14 23:12:13,522 basehttp 24692 20600 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:12:22,418 views 24692 2916 File 0eddda77-0540-47da-b991-fdec69d838ff_converted.pdf downloaded successfully
+INFO 2025-06-14 23:12:22,418 basehttp 24692 2916 "GET /download/0eddda77-0540-47da-b991-fdec69d838ff/ HTTP/1.1" 200 4262
+INFO 2025-06-14 23:20:15,096 basehttp 24692 27820 "GET / HTTP/1.1" 200 70794
+WARNING 2025-06-14 23:20:16,985 basehttp 24692 19940 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:20:29,849 views 24692 24492 Created conversion job fa708cf0-7e8e-416e-8c17-e65ae01990ee for file Sanjeev Kumar (2)_page1 (1).png
+INFO 2025-06-14 23:20:29,860 views 24692 24492 Saved file to uploads/fa708cf0-7e8e-416e-8c17-e65ae01990ee_d1132588.png
+INFO 2025-06-14 23:20:30,131 views 24692 24492 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\fa708cf0-7e8e-416e-8c17-e65ae01990ee_converted.pdf
+INFO 2025-06-14 23:20:30,150 views 24692 24492 Conversion completed for job fa708cf0-7e8e-416e-8c17-e65ae01990ee
+INFO 2025-06-14 23:20:30,159 basehttp 24692 24492 "POST /upload/ HTTP/1.1" 200 266
+INFO 2025-06-14 23:21:07,780 basehttp 24692 26256 "GET / HTTP/1.1" 200 70794
+WARNING 2025-06-14 23:21:07,885 basehttp 24692 23440 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:21:15,408 views 24692 26256 Created conversion job 8b946eaa-b469-40ea-8a60-120d5c246e7a for file qr-code-1 (1).png
+INFO 2025-06-14 23:21:15,417 views 24692 26256 Saved file to uploads/8b946eaa-b469-40ea-8a60-120d5c246e7a_37b740ed.png
+INFO 2025-06-14 23:21:15,471 views 24692 26256 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\8b946eaa-b469-40ea-8a60-120d5c246e7a_converted.pdf
+INFO 2025-06-14 23:21:15,488 views 24692 26256 Conversion completed for job 8b946eaa-b469-40ea-8a60-120d5c246e7a
+INFO 2025-06-14 23:21:15,492 basehttp 24692 26256 "POST /upload/ HTTP/1.1" 200 252
+INFO 2025-06-14 23:24:58,342 basehttp 24692 15224 "GET / HTTP/1.1" 200 71369
+WARNING 2025-06-14 23:24:58,795 basehttp 24692 26464 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:25:04,922 views 24692 25860 Created conversion job a621d019-5419-44f3-a04a-3128a0ce8cf4 for file qr-code (2).png
+INFO 2025-06-14 23:25:04,930 views 24692 25860 Saved file to uploads/a621d019-5419-44f3-a04a-3128a0ce8cf4_a772a19f.png
+INFO 2025-06-14 23:25:05,057 views 24692 25860 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\a621d019-5419-44f3-a04a-3128a0ce8cf4_converted.pdf
+INFO 2025-06-14 23:25:05,063 views 24692 25860 Conversion completed for job a621d019-5419-44f3-a04a-3128a0ce8cf4
+INFO 2025-06-14 23:25:05,074 basehttp 24692 25860 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:25:11,024 views 24692 25860 File a621d019-5419-44f3-a04a-3128a0ce8cf4_converted.pdf downloaded successfully
+INFO 2025-06-14 23:25:11,024 basehttp 24692 25860 "GET /download/a621d019-5419-44f3-a04a-3128a0ce8cf4/ HTTP/1.1" 200 80823
+INFO 2025-06-14 23:26:00,033 basehttp 24692 23804 "GET / HTTP/1.1" 200 74644
+WARNING 2025-06-14 23:26:00,534 basehttp 24692 26512 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:26:44,211 basehttp 24692 27704 "GET / HTTP/1.1" 200 71369
+WARNING 2025-06-14 23:26:44,339 basehttp 24692 18348 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+ERROR 2025-06-14 23:34:06,138 log 24692 27820 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py", line 32, in home
+    return render(request, 'converter/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2843: 'endblock'. Did you forget to register or load this tag?
+ERROR 2025-06-14 23:34:06,153 basehttp 24692 27820 "GET / HTTP/1.1" 500 162156
+INFO 2025-06-14 23:34:11,531 basehttp 24692 27820 "GET / HTTP/1.1" 200 104624
+WARNING 2025-06-14 23:34:11,772 basehttp 24692 7676 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:35:49,543 basehttp 24692 14076 "GET / HTTP/1.1" 200 71369
+WARNING 2025-06-14 23:35:49,891 basehttp 24692 24228 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:35:56,029 views 24692 23588 Created conversion job 2289a7c5-fc28-4362-ae35-8352964da72e for file qr_code (5).png
+INFO 2025-06-14 23:35:56,050 views 24692 23588 Saved file to uploads/2289a7c5-fc28-4362-ae35-8352964da72e_414de219.png
+INFO 2025-06-14 23:35:56,191 views 24692 23588 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\2289a7c5-fc28-4362-ae35-8352964da72e_converted.pdf
+INFO 2025-06-14 23:35:56,203 views 24692 23588 Conversion completed for job 2289a7c5-fc28-4362-ae35-8352964da72e
+INFO 2025-06-14 23:35:56,206 basehttp 24692 23588 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:35:58,124 views 24692 23588 File 2289a7c5-fc28-4362-ae35-8352964da72e_converted.pdf downloaded successfully
+INFO 2025-06-14 23:35:58,124 basehttp 24692 23588 "GET /download/2289a7c5-fc28-4362-ae35-8352964da72e/ HTTP/1.1" 200 19196
+INFO 2025-06-14 23:47:08,220 basehttp 24692 20820 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:47:09,216 log 24692 20820 Not Found: /sw.js
+WARNING 2025-06-14 23:47:09,221 basehttp 24692 20820 "GET /sw.js HTTP/1.1" 404 3606
+WARNING 2025-06-14 23:47:09,255 basehttp 24692 6972 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:47:32,138 views 24692 4100 Created conversion job a63cbc1c-a36a-4996-9200-790059680124 for file qr-code (2).png
+INFO 2025-06-14 23:47:32,154 views 24692 4100 Saved file to uploads/a63cbc1c-a36a-4996-9200-790059680124_202e2902.png
+INFO 2025-06-14 23:47:32,286 views 24692 4100 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\a63cbc1c-a36a-4996-9200-790059680124_converted.pdf
+INFO 2025-06-14 23:47:32,321 views 24692 4100 Conversion completed for job a63cbc1c-a36a-4996-9200-790059680124
+INFO 2025-06-14 23:47:32,321 basehttp 24692 4100 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:47:34,792 views 24692 21944 File a63cbc1c-a36a-4996-9200-790059680124_converted.pdf downloaded successfully
+INFO 2025-06-14 23:47:34,794 basehttp 24692 21944 "GET /download/a63cbc1c-a36a-4996-9200-790059680124/ HTTP/1.1" 200 80823
+INFO 2025-06-14 23:47:59,517 basehttp 24692 25432 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:47:59,705 log 24692 25432 Not Found: /sw.js
+WARNING 2025-06-14 23:47:59,705 basehttp 24692 24496 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+WARNING 2025-06-14 23:47:59,705 basehttp 24692 25432 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:48:06,704 basehttp 24692 27448 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:48:06,803 log 24692 27448 Not Found: /sw.js
+WARNING 2025-06-14 23:48:06,803 basehttp 24692 27448 "GET /sw.js HTTP/1.1" 404 3606
+WARNING 2025-06-14 23:48:06,823 basehttp 24692 7224 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:48:33,525 views 24692 25504 Created conversion job 1312b96e-a938-40bc-8f77-7f80736f3400 for file larnwell_education_page_1.png
+INFO 2025-06-14 23:48:33,525 views 24692 25504 Saved file to uploads/1312b96e-a938-40bc-8f77-7f80736f3400_82f41731.png
+INFO 2025-06-14 23:48:33,759 views 24692 25504 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\1312b96e-a938-40bc-8f77-7f80736f3400_converted.pdf
+INFO 2025-06-14 23:48:33,791 views 24692 25504 Conversion completed for job 1312b96e-a938-40bc-8f77-7f80736f3400
+INFO 2025-06-14 23:48:33,793 basehttp 24692 25504 "POST /upload/ HTTP/1.1" 200 264
+INFO 2025-06-14 23:48:35,576 views 24692 8860 File 1312b96e-a938-40bc-8f77-7f80736f3400_converted.pdf downloaded successfully
+INFO 2025-06-14 23:48:35,579 basehttp 24692 8860 "GET /download/1312b96e-a938-40bc-8f77-7f80736f3400/ HTTP/1.1" 200 674551
+INFO 2025-06-14 23:49:04,594 autoreload 9684 12968 Watching for file changes with StatReloader
+INFO 2025-06-14 23:49:07,488 basehttp 9684 23368 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:49:07,928 log 9684 23368 Not Found: /sw.js
+WARNING 2025-06-14 23:49:07,929 basehttp 9684 23368 "GET /sw.js HTTP/1.1" 404 3606
+WARNING 2025-06-14 23:49:07,950 basehttp 9684 25288 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:49:10,846 basehttp 9684 23368 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:49:10,940 log 9684 23368 Not Found: /sw.js
+WARNING 2025-06-14 23:49:10,941 basehttp 9684 5952 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+WARNING 2025-06-14 23:49:10,941 basehttp 9684 23368 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:49:12,215 basehttp 9684 23368 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:49:12,304 log 9684 23368 Not Found: /sw.js
+WARNING 2025-06-14 23:49:12,305 basehttp 9684 14428 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+WARNING 2025-06-14 23:49:12,305 basehttp 9684 23368 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:49:12,917 basehttp 9684 23368 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:49:13,007 log 9684 23368 Not Found: /sw.js
+WARNING 2025-06-14 23:49:13,008 basehttp 9684 23368 "GET /sw.js HTTP/1.1" 404 3606
+WARNING 2025-06-14 23:49:13,008 basehttp 9684 5384 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:49:20,590 views 9684 19356 Created conversion job 8958ba42-177a-4d52-beb1-bed060706a68 for file qr_code.png
+INFO 2025-06-14 23:49:20,603 views 9684 19356 Saved file to uploads/8958ba42-177a-4d52-beb1-bed060706a68_46a34447.png
+INFO 2025-06-14 23:49:20,741 views 9684 19356 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\8958ba42-177a-4d52-beb1-bed060706a68_converted.pdf
+INFO 2025-06-14 23:49:20,758 views 9684 19356 Conversion completed for job 8958ba42-177a-4d52-beb1-bed060706a68
+INFO 2025-06-14 23:49:20,758 basehttp 9684 19356 "POST /upload/ HTTP/1.1" 200 246
+INFO 2025-06-14 23:49:22,938 views 9684 19356 File 8958ba42-177a-4d52-beb1-bed060706a68_converted.pdf downloaded successfully
+INFO 2025-06-14 23:49:22,938 basehttp 9684 19356 "GET /download/8958ba42-177a-4d52-beb1-bed060706a68/ HTTP/1.1" 200 18637
+INFO 2025-06-14 23:49:38,524 basehttp 9684 25920 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:49:38,607 log 9684 25920 Not Found: /sw.js
+WARNING 2025-06-14 23:49:38,607 basehttp 9684 17892 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+WARNING 2025-06-14 23:49:38,607 basehttp 9684 25920 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:49:49,618 basehttp 9684 15668 "GET / HTTP/1.1" 200 71369
+WARNING 2025-06-14 23:49:49,708 basehttp 9684 25608 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+INFO 2025-06-14 23:49:59,034 views 9684 14656 Created conversion job df7840c6-d3a7-4b38-83c1-e9f7040e98f5 for file larnwell_education_page1 (3).png
+INFO 2025-06-14 23:49:59,070 views 9684 14656 Saved file to uploads/df7840c6-d3a7-4b38-83c1-e9f7040e98f5_4be2b217.png
+INFO 2025-06-14 23:49:59,342 views 9684 14656 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\df7840c6-d3a7-4b38-83c1-e9f7040e98f5_converted.pdf
+INFO 2025-06-14 23:49:59,362 views 9684 14656 Conversion completed for job df7840c6-d3a7-4b38-83c1-e9f7040e98f5
+INFO 2025-06-14 23:49:59,367 basehttp 9684 14656 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-06-14 23:50:02,217 views 9684 28512 File df7840c6-d3a7-4b38-83c1-e9f7040e98f5_converted.pdf downloaded successfully
+INFO 2025-06-14 23:50:02,217 basehttp 9684 28512 "GET /download/df7840c6-d3a7-4b38-83c1-e9f7040e98f5/ HTTP/1.1" 200 223061
+INFO 2025-06-14 23:50:18,430 basehttp 9684 28488 "GET / HTTP/1.1" 200 92096
+WARNING 2025-06-14 23:50:18,526 log 9684 28488 Not Found: /sw.js
+WARNING 2025-06-14 23:50:18,533 basehttp 9684 7664 "GET /static/site.webmanifest HTTP/1.1" 404 1975
+WARNING 2025-06-14 23:50:18,534 basehttp 9684 28488 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:50:24,072 views 9684 28488 Created conversion job 7797ba69-d644-4ed0-9e40-ced7bbd770a6 for file qrcode (1).png
+INFO 2025-06-14 23:50:24,082 views 9684 28488 Saved file to uploads/7797ba69-d644-4ed0-9e40-ced7bbd770a6_8d0a2ef4.png
+INFO 2025-06-14 23:50:24,194 views 9684 28488 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\7797ba69-d644-4ed0-9e40-ced7bbd770a6_converted.pdf
+INFO 2025-06-14 23:50:24,215 views 9684 28488 Conversion completed for job 7797ba69-d644-4ed0-9e40-ced7bbd770a6
+INFO 2025-06-14 23:50:24,215 basehttp 9684 28488 "POST /upload/ HTTP/1.1" 200 249
+INFO 2025-06-14 23:50:28,214 views 9684 25416 File 7797ba69-d644-4ed0-9e40-ced7bbd770a6_converted.pdf downloaded successfully
+INFO 2025-06-14 23:50:28,214 basehttp 9684 25416 "GET /download/7797ba69-d644-4ed0-9e40-ced7bbd770a6/ HTTP/1.1" 200 56595
+INFO 2025-06-14 23:55:31,122 basehttp 9684 26124 "GET / HTTP/1.1" 200 90935
+WARNING 2025-06-14 23:55:31,874 log 9684 26124 Not Found: /sw.js
+WARNING 2025-06-14 23:55:31,874 basehttp 9684 26124 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-14 23:55:39,082 views 9684 25820 Created conversion job c25bd564-7250-4662-804b-db31d56a1f3e for file qr-code (1).png
+INFO 2025-06-14 23:55:39,112 views 9684 25820 Saved file to uploads/c25bd564-7250-4662-804b-db31d56a1f3e_5647f2bb.png
+INFO 2025-06-14 23:55:39,211 views 9684 25820 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\c25bd564-7250-4662-804b-db31d56a1f3e_converted.pdf
+INFO 2025-06-14 23:55:39,226 views 9684 25820 Conversion completed for job c25bd564-7250-4662-804b-db31d56a1f3e
+INFO 2025-06-14 23:55:39,226 basehttp 9684 25820 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-14 23:55:41,040 views 9684 25820 File c25bd564-7250-4662-804b-db31d56a1f3e_converted.pdf downloaded successfully
+INFO 2025-06-14 23:55:41,040 basehttp 9684 25820 "GET /download/c25bd564-7250-4662-804b-db31d56a1f3e/ HTTP/1.1" 200 4261
+INFO 2025-06-15 00:01:16,776 basehttp 9684 28500 "GET / HTTP/1.1" 200 114871
+WARNING 2025-06-15 00:01:17,100 log 9684 28500 Not Found: /sw.js
+WARNING 2025-06-15 00:01:17,103 basehttp 9684 28500 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:01:25,517 views 9684 28500 Created conversion job b0b20dad-90f8-4b3e-addd-00932295c8fe for file qr-code (1).png
+INFO 2025-06-15 00:01:25,543 views 9684 28500 Saved file to uploads/b0b20dad-90f8-4b3e-addd-00932295c8fe_4bf5711f.png
+INFO 2025-06-15 00:01:25,643 views 9684 28500 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\b0b20dad-90f8-4b3e-addd-00932295c8fe_converted.pdf
+INFO 2025-06-15 00:01:25,663 views 9684 28500 Conversion completed for job b0b20dad-90f8-4b3e-addd-00932295c8fe
+INFO 2025-06-15 00:01:25,676 basehttp 9684 28500 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-15 00:01:30,253 views 9684 19228 File b0b20dad-90f8-4b3e-addd-00932295c8fe_converted.pdf downloaded successfully
+INFO 2025-06-15 00:01:30,255 basehttp 9684 19228 "GET /download/b0b20dad-90f8-4b3e-addd-00932295c8fe/ HTTP/1.1" 200 4264
+WARNING 2025-06-15 00:02:05,858 log 9684 18240 Not Found: /sw.js
+WARNING 2025-06-15 00:02:05,878 basehttp 9684 18240 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:02:12,640 views 9684 22884 Created conversion job dc63b1b1-9e7f-480b-b627-e70d4c11f78e for file qr_code (5).png
+INFO 2025-06-15 00:02:12,655 views 9684 22884 Saved file to uploads/dc63b1b1-9e7f-480b-b627-e70d4c11f78e_c1cb1007.png
+INFO 2025-06-15 00:02:12,738 views 9684 22884 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\dc63b1b1-9e7f-480b-b627-e70d4c11f78e_converted.pdf
+INFO 2025-06-15 00:02:12,772 views 9684 22884 Conversion completed for job dc63b1b1-9e7f-480b-b627-e70d4c11f78e
+INFO 2025-06-15 00:02:12,774 basehttp 9684 22884 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-15 00:02:14,328 views 9684 22884 File dc63b1b1-9e7f-480b-b627-e70d4c11f78e_converted.pdf downloaded successfully
+INFO 2025-06-15 00:02:14,330 basehttp 9684 22884 "GET /download/dc63b1b1-9e7f-480b-b627-e70d4c11f78e/ HTTP/1.1" 200 19196
+INFO 2025-06-15 00:02:35,113 basehttp 9684 23948 "GET / HTTP/1.1" 200 90934
+WARNING 2025-06-15 00:02:35,193 log 9684 23948 Not Found: /sw.js
+WARNING 2025-06-15 00:02:35,196 basehttp 9684 23948 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:02:40,554 views 9684 23948 Created conversion job e7d81a1e-23a6-49d2-9014-fb9823aeb352 for file qr-code (2).png
+INFO 2025-06-15 00:02:40,557 views 9684 23948 Saved file to uploads/e7d81a1e-23a6-49d2-9014-fb9823aeb352_42a4e98f.png
+INFO 2025-06-15 00:02:40,659 views 9684 23948 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\e7d81a1e-23a6-49d2-9014-fb9823aeb352_converted.pdf
+INFO 2025-06-15 00:02:40,672 views 9684 23948 Conversion completed for job e7d81a1e-23a6-49d2-9014-fb9823aeb352
+INFO 2025-06-15 00:02:40,672 basehttp 9684 23948 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-15 00:02:42,112 views 9684 24344 File e7d81a1e-23a6-49d2-9014-fb9823aeb352_converted.pdf downloaded successfully
+INFO 2025-06-15 00:02:42,113 basehttp 9684 24344 "GET /download/e7d81a1e-23a6-49d2-9014-fb9823aeb352/ HTTP/1.1" 200 80823
+INFO 2025-06-15 00:03:30,982 basehttp 9684 5328 "GET / HTTP/1.1" 200 91803
+WARNING 2025-06-15 00:03:31,186 log 9684 14704 Not Found: /sw.js
+WARNING 2025-06-15 00:03:31,187 basehttp 9684 14704 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:03:35,814 views 9684 14704 Created conversion job 4655b4af-f3ac-4404-b392-5bc1c7f98977 for file qr_code (4)_compressed.png
+INFO 2025-06-15 00:03:35,829 views 9684 14704 Saved file to uploads/4655b4af-f3ac-4404-b392-5bc1c7f98977_3e508e23.png
+INFO 2025-06-15 00:03:35,898 views 9684 14704 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\4655b4af-f3ac-4404-b392-5bc1c7f98977_converted.pdf
+INFO 2025-06-15 00:03:35,915 views 9684 14704 Conversion completed for job 4655b4af-f3ac-4404-b392-5bc1c7f98977
+INFO 2025-06-15 00:03:35,915 basehttp 9684 14704 "POST /upload/ HTTP/1.1" 200 261
+INFO 2025-06-15 00:03:37,391 views 9684 14704 File 4655b4af-f3ac-4404-b392-5bc1c7f98977_converted.pdf downloaded successfully
+INFO 2025-06-15 00:03:37,395 basehttp 9684 14704 "GET /download/4655b4af-f3ac-4404-b392-5bc1c7f98977/ HTTP/1.1" 200 18511
+INFO 2025-06-15 00:04:04,691 basehttp 9684 26560 "GET / HTTP/1.1" 200 91803
+WARNING 2025-06-15 00:04:05,306 log 9684 26560 Not Found: /sw.js
+WARNING 2025-06-15 00:04:05,309 basehttp 9684 26560 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:04:11,301 views 9684 25168 Created conversion job ff2ae832-c5e9-4f94-8c2c-bde22496893e for file qr-code (1).png
+INFO 2025-06-15 00:04:11,306 views 9684 25168 Saved file to uploads/ff2ae832-c5e9-4f94-8c2c-bde22496893e_bc151fe8.png
+INFO 2025-06-15 00:04:11,363 views 9684 25168 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\ff2ae832-c5e9-4f94-8c2c-bde22496893e_converted.pdf
+INFO 2025-06-15 00:04:11,373 views 9684 25168 Conversion completed for job ff2ae832-c5e9-4f94-8c2c-bde22496893e
+INFO 2025-06-15 00:04:11,389 basehttp 9684 25168 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-15 00:04:12,726 views 9684 25168 File ff2ae832-c5e9-4f94-8c2c-bde22496893e_converted.pdf downloaded successfully
+INFO 2025-06-15 00:04:12,733 basehttp 9684 25168 "GET /download/ff2ae832-c5e9-4f94-8c2c-bde22496893e/ HTTP/1.1" 200 4261
+ERROR 2025-06-15 00:04:43,338 log 9684 28576 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py", line 32, in home
+    return render(request, 'converter/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 2515: 'endblock'. Did you forget to register or load this tag?
+ERROR 2025-06-15 00:04:43,354 basehttp 9684 28576 "GET / HTTP/1.1" 500 162396
+INFO 2025-06-15 00:04:50,051 basehttp 9684 28576 "GET / HTTP/1.1" 200 97780
+WARNING 2025-06-15 00:04:50,170 log 9684 28576 Not Found: /sw.js
+WARNING 2025-06-15 00:04:50,171 basehttp 9684 28576 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:04:54,441 views 9684 21308 Created conversion job 1d29cc9c-27aa-453d-8388-e07e2c9422c5 for file bitly-qr-code.png
+INFO 2025-06-15 00:04:54,462 views 9684 21308 Saved file to uploads/1d29cc9c-27aa-453d-8388-e07e2c9422c5_abca78c1.png
+INFO 2025-06-15 00:04:54,628 views 9684 21308 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\1d29cc9c-27aa-453d-8388-e07e2c9422c5_converted.pdf
+INFO 2025-06-15 00:04:54,644 views 9684 21308 Conversion completed for job 1d29cc9c-27aa-453d-8388-e07e2c9422c5
+INFO 2025-06-15 00:04:54,650 basehttp 9684 21308 "POST /upload/ HTTP/1.1" 200 252
+INFO 2025-06-15 00:04:56,052 views 9684 21308 File 1d29cc9c-27aa-453d-8388-e07e2c9422c5_converted.pdf downloaded successfully
+INFO 2025-06-15 00:04:56,052 basehttp 9684 21308 "GET /download/1d29cc9c-27aa-453d-8388-e07e2c9422c5/ HTTP/1.1" 200 56714
+INFO 2025-06-15 00:08:06,644 basehttp 9684 23476 "GET / HTTP/1.1" 200 97780
+WARNING 2025-06-15 00:08:06,885 log 9684 23476 Not Found: /sw.js
+WARNING 2025-06-15 00:08:06,886 basehttp 9684 23476 "GET /sw.js HTTP/1.1" 404 3606
+INFO 2025-06-15 00:24:42,410 basehttp 9684 28660 "GET / HTTP/1.1" 200 100472
+INFO 2025-06-15 00:25:01,884 views 9684 25240 Created conversion job bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5 for file qr-code (2).png
+INFO 2025-06-15 00:25:01,902 views 9684 25240 Saved file to uploads/bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5_356fc9d9.png
+INFO 2025-06-15 00:25:02,034 views 9684 25240 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5_converted.pdf
+INFO 2025-06-15 00:25:02,048 views 9684 25240 Conversion completed for job bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5
+INFO 2025-06-15 00:25:02,050 basehttp 9684 25240 "POST /upload/ HTTP/1.1" 200 250
+INFO 2025-06-15 00:25:04,094 views 9684 26864 File bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5_converted.pdf downloaded successfully
+INFO 2025-06-15 00:25:04,096 basehttp 9684 26864 "GET /download/bda120b9-c3b7-4d37-81ed-0f8d0cc8cea5/ HTTP/1.1" 200 80822
+INFO 2025-06-15 00:25:32,315 basehttp 9684 2000 "GET / HTTP/1.1" 200 100472
+INFO 2025-06-15 00:26:31,057 basehttp 9684 27908 "GET / HTTP/1.1" 200 100472
+INFO 2025-06-15 02:46:45,302 autoreload 9684 12968 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-06-15 02:46:47,224 autoreload 26804 25056 Watching for file changes with StatReloader
+INFO 2025-06-15 02:50:16,944 autoreload 26804 25056 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\file_converter\settings.py changed, reloading.
+INFO 2025-06-15 02:50:18,322 autoreload 24412 9792 Watching for file changes with StatReloader
+INFO 2025-06-15 02:50:57,832 autoreload 24412 9792 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-06-15 02:50:58,740 autoreload 8616 14704 Watching for file changes with StatReloader
+INFO 2025-06-15 02:51:30,393 autoreload 8616 14704 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-06-15 02:51:32,091 autoreload 24640 4348 Watching for file changes with StatReloader
+INFO 2025-06-15 02:51:38,768 autoreload 24640 4348 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-06-15 02:51:39,642 autoreload 13412 15920 Watching for file changes with StatReloader
+INFO 2025-06-15 02:53:17,117 autoreload 19308 21608 Watching for file changes with StatReloader
+INFO 2025-06-15 02:53:24,025 basehttp 19308 23236 "GET / HTTP/1.1" 200 100472
+INFO 2025-06-15 02:54:21,497 basehttp 19308 2000 "GET / HTTP/1.1" 200 100267
+INFO 2025-06-15 02:54:27,814 basehttp 19308 2000 "GET /contact-us/ HTTP/1.1" 200 50768
+INFO 2025-06-15 02:54:31,826 basehttp 19308 23048 "GET / HTTP/1.1" 200 100267
+INFO 2025-06-15 02:55:43,307 basehttp 19308 11684 "GET / HTTP/1.1" 200 104113
+INFO 2025-06-15 02:55:54,621 basehttp 19308 25224 "GET / HTTP/1.1" 200 99194
+INFO 2025-06-15 02:56:08,753 basehttp 19308 18124 "GET / HTTP/1.1" 200 100060
+INFO 2025-06-15 02:56:13,051 basehttp 19308 18124 "GET /contact-us/ HTTP/1.1" 200 50561
+INFO 2025-06-15 02:56:14,006 basehttp 19308 10916 "GET / HTTP/1.1" 200 100060
+INFO 2025-06-15 02:56:14,784 basehttp 19308 10916 "GET / HTTP/1.1" 200 100060
+INFO 2025-06-15 02:57:42,854 basehttp 19308 24140 "GET / HTTP/1.1" 200 103374
+INFO 2025-06-15 02:57:53,030 basehttp 19308 22260 "GET / HTTP/1.1" 200 103374
+INFO 2025-06-15 02:58:38,701 basehttp 19308 16076 "GET / HTTP/1.1" 200 114147
+INFO 2025-06-15 02:58:56,341 basehttp 19308 8628 "GET / HTTP/1.1" 200 100060
+INFO 2025-06-15 03:03:26,002 basehttp 19308 25388 "GET / HTTP/1.1" 200 117495
+INFO 2025-06-15 03:04:02,953 basehttp 19308 26044 "GET /contact-us/ HTTP/1.1" 200 67996
+WARNING 2025-06-15 03:04:32,507 log 19308 21856 Bad Request: /contact/submit/
+WARNING 2025-06-15 03:04:32,508 basehttp 19308 21856 "POST /contact/submit/ HTTP/1.1" 400 75
+ERROR 2025-06-15 03:04:55,641 views 19308 1260 Failed to send contact form email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2365de781b1sm34653205ad.89 - gsmtp')
+INFO 2025-06-15 03:04:55,651 basehttp 19308 1260 "POST /contact/submit/ HTTP/1.1" 200 92
+INFO 2025-06-15 03:06:56,764 autoreload 19308 21608 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\file_converter\settings.py changed, reloading.
+INFO 2025-06-15 03:06:59,579 autoreload 28448 13716 Watching for file changes with StatReloader
+INFO 2025-06-15 03:07:00,916 basehttp 28448 15872 "GET /contact-us/ HTTP/1.1" 200 67996
+INFO 2025-06-15 03:07:22,404 views 28448 27104 Contact form submitted successfully: privacy_question from mani87@gmail.com
+INFO 2025-06-15 03:07:22,421 basehttp 28448 27104 "POST /contact/submit/ HTTP/1.1" 200 92
+INFO 2025-06-15 03:08:11,990 basehttp 28448 13732 "GET / HTTP/1.1" 200 117495
+INFO 2025-06-15 03:08:14,507 basehttp 28448 13732 "GET / HTTP/1.1" 200 117495
+INFO 2025-06-15 03:08:18,923 basehttp 28448 13732 "GET / HTTP/1.1" 200 117495
+INFO 2025-06-15 03:08:21,923 basehttp 28448 20496 "GET /terms-of-service/ HTTP/1.1" 200 63998
+INFO 2025-06-15 03:08:39,731 basehttp 28448 2240 "GET /privacy-policy/ HTTP/1.1" 200 60433
+INFO 2025-06-15 03:08:48,066 basehttp 28448 2240 "GET / HTTP/1.1" 200 117495
+INFO 2025-06-15 03:09:00,910 basehttp 28448 24072 "GET / HTTP/1.1" 200 100060
+INFO 2025-06-15 03:13:02,276 basehttp 28448 7044 "GET / HTTP/1.1" 200 98770
+INFO 2025-06-15 03:13:15,991 basehttp 28448 27376 "GET /contact-us/ HTTP/1.1" 200 49271
+INFO 2025-06-15 03:13:45,249 views 28448 25448 Contact form submitted successfully: bug_report from mani87y@gmail.com
+INFO 2025-06-15 03:13:45,269 basehttp 28448 25448 "POST /contact/submit/ HTTP/1.1" 200 92
+INFO 2025-06-15 03:14:44,376 basehttp 28448 9644 "GET /contact-us/ HTTP/1.1" 200 50561
+INFO 2025-06-15 03:16:20,498 basehttp 28448 14736 "GET /contact-us/ HTTP/1.1" 200 49271
+INFO 2025-06-15 03:16:49,185 views 28448 5552 Contact form submitted successfully: other from mani87y@gmail.com
+INFO 2025-06-15 03:16:49,201 basehttp 28448 5552 "POST /contact/submit/ HTTP/1.1" 200 92
+INFO 2025-06-15 03:20:31,242 basehttp 28448 25264 - Broken pipe from ('127.0.0.1', 53680)
+INFO 2025-06-15 03:20:32,549 basehttp 28448 12400 "GET /contact-us/ HTTP/1.1" 200 49290
+INFO 2025-06-15 03:20:32,981 basehttp 28448 12400 "GET / HTTP/1.1" 200 98789
+INFO 2025-06-15 03:20:37,335 basehttp 28448 12400 "GET /contact-us/ HTTP/1.1" 200 49290
+INFO 2025-06-15 03:20:41,451 basehttp 28448 26620 "GET /terms-of-service HTTP/1.1" 301 0
+INFO 2025-06-15 03:20:41,560 basehttp 28448 19284 "GET /terms-of-service/ HTTP/1.1" 200 45292
+INFO 2025-06-15 03:20:44,644 basehttp 28448 19284 "GET /privacy-policy HTTP/1.1" 301 0
+INFO 2025-06-15 03:20:44,699 basehttp 28448 19756 "GET /privacy-policy/ HTTP/1.1" 200 41727
+INFO 2025-06-15 03:20:52,172 basehttp 28448 25504 - Broken pipe from ('127.0.0.1', 53709)
+INFO 2025-06-15 03:20:52,172 basehttp 28448 7500 "GET / HTTP/1.1" 200 98788
+INFO 2025-06-15 03:20:56,211 basehttp 28448 5528 "GET /contact-us HTTP/1.1" 301 0
+INFO 2025-06-15 03:20:56,285 basehttp 28448 18120 "GET /contact-us/ HTTP/1.1" 200 49289
+INFO 2025-06-15 03:21:05,024 basehttp 28448 18120 "GET / HTTP/1.1" 200 98772
+INFO 2025-06-15 03:21:45,313 basehttp 28448 24808 "GET / HTTP/1.1" 200 98796
+INFO 2025-06-15 03:23:25,644 basehttp 28448 26860 "GET / HTTP/1.1" 200 98833
+INFO 2025-06-15 03:23:43,773 basehttp 28448 4340 "GET /contact-us/ HTTP/1.1" 200 49334
+INFO 2025-06-15 03:29:39,377 autoreload 28448 13716 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-06-15 03:29:41,220 autoreload 9636 13132 Watching for file changes with StatReloader
+INFO 2025-06-15 03:30:36,177 autoreload 9636 13132 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-06-15 03:30:37,054 autoreload 22760 21220 Watching for file changes with StatReloader
+INFO 2025-06-15 03:31:57,998 autoreload 22760 21220 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\file_converter\settings.py changed, reloading.
+INFO 2025-06-15 03:31:59,335 autoreload 7564 26748 Watching for file changes with StatReloader
+INFO 2025-06-15 03:32:13,492 autoreload 7564 26748 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\file_converter\settings.py changed, reloading.
+INFO 2025-06-15 03:32:14,091 autoreload 9612 28668 Watching for file changes with StatReloader
+INFO 2025-06-15 03:33:46,077 autoreload 9612 28668 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-06-15 03:33:46,961 autoreload 11736 15800 Watching for file changes with StatReloader
+INFO 2025-06-15 03:35:05,627 autoreload 20596 13188 Watching for file changes with StatReloader
+INFO 2025-06-15 03:36:55,267 autoreload 24768 28244 Watching for file changes with StatReloader
+INFO 2025-06-15 03:37:47,491 autoreload 24768 28244 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-06-15 03:37:48,230 autoreload 26192 23656 Watching for file changes with StatReloader
+INFO 2025-06-15 03:38:01,992 autoreload 26192 23656 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-06-15 03:38:02,588 autoreload 25224 6332 Watching for file changes with StatReloader
+INFO 2025-06-15 03:38:29,288 autoreload 25224 6332 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\file_converter\urls.py changed, reloading.
+INFO 2025-06-15 03:38:29,891 autoreload 25512 9696 Watching for file changes with StatReloader
+INFO 2025-06-15 03:38:34,932 basehttp 25512 25236 "GET / HTTP/1.1" 200 98833
+INFO 2025-06-15 03:38:46,744 basehttp 25512 11916 "GET /sitemap.xml HTTP/1.1" 200 1360
+INFO 2025-06-15 03:39:10,233 basehttp 25512 28264 "GET /robots.txt HTTP/1.1" 200 1182
+INFO 2025-06-15 03:39:17,001 basehttp 25512 28264 "GET / HTTP/1.1" 200 98833
+INFO 2025-06-15 03:39:19,086 basehttp 25512 19152 "GET / HTTP/1.1" 200 98833
+INFO 2025-06-15 04:18:24,571 basehttp 25512 18520 "GET / HTTP/1.1" 200 103834
+ERROR 2025-06-15 04:22:36,384 log 25512 9040 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\urls\base.py", line 81, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'https'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py", line 36, in home
+    return render(request, 'converter/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\urls\base.py", line 92, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'https' is not a registered namespace
+ERROR 2025-06-15 04:22:36,451 basehttp 25512 9040 "GET / HTTP/1.1" 500 147640
+INFO 2025-06-15 04:23:36,830 basehttp 25512 28268 "GET / HTTP/1.1" 200 103811
+INFO 2025-06-15 04:26:12,877 basehttp 25512 14624 "GET / HTTP/1.1" 200 103893
+INFO 2025-06-28 13:21:58,746 autoreload 22212 18236 Watching for file changes with StatReloader
+INFO 2025-06-28 13:22:08,026 basehttp 22212 22156 "GET / HTTP/1.1" 200 103893
+INFO 2025-06-28 13:22:23,181 basehttp 22212 15908 "GET /contact-us/ HTTP/1.1" 200 49393
+INFO 2025-06-28 13:22:28,167 basehttp 22212 14968 "GET / HTTP/1.1" 200 103893
+INFO 2025-06-28 13:23:59,669 views 22212 24964 Created conversion job 6245013f-f94b-4c0a-99b2-67337fff3153 for file e9266b82-7754-4b0a-bed8-84c508c1f22d.jpg
+INFO 2025-06-28 13:23:59,695 views 22212 24964 Saved file to uploads/6245013f-f94b-4c0a-99b2-67337fff3153_6d67388f.jpg
+INFO 2025-06-28 13:23:59,934 views 22212 24964 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\6245013f-f94b-4c0a-99b2-67337fff3153_converted.pdf
+INFO 2025-06-28 13:23:59,948 views 22212 24964 Conversion completed for job 6245013f-f94b-4c0a-99b2-67337fff3153
+INFO 2025-06-28 13:23:59,966 basehttp 22212 24964 "POST /upload/ HTTP/1.1" 200 275
+INFO 2025-06-28 13:24:02,248 views 22212 24964 File 6245013f-f94b-4c0a-99b2-67337fff3153_converted.pdf downloaded successfully
+INFO 2025-06-28 13:24:02,248 basehttp 22212 24964 "GET /download/6245013f-f94b-4c0a-99b2-67337fff3153/ HTTP/1.1" 200 48115

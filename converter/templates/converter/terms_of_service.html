@@ -1,0 +1,603 @@
+<!-- templates/converter/terms_of_service.html -->
+{% extends 'base.html' %}
+
+{% block title %}Terms of Service - JPG to PDF Converter | jpg2pdf.at{% endblock %}
+{% block meta_title %}Terms of Service - JPG to PDF Converter | jpg2pdf.at{% endblock %}
+{% block meta_description %}Terms of Service for jpg2pdf.at JPG to PDF converter. Legal terms and conditions for using our free online JPG to PDF conversion service.{% endblock %}
+{% block meta_keywords %}terms of service, jpg to pdf terms, legal terms, jpg2pdf.at, converter terms{% endblock %}
+
+{% block content %}
+<style>
+    .legal-container {
+        max-width: 900px;
+        margin: 2rem auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .legal-header {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+    
+    .legal-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    
+    .legal-subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+    }
+    
+    .legal-date {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+    
+    .legal-content {
+        padding: 3rem 2rem;
+    }
+    
+    .legal-section {
+        margin-bottom: 2.5rem;
+    }
+    
+    .legal-section h2 {
+        color: #28a745;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e9ecef;
+    }
+    
+    .legal-section h3 {
+        color: #343a40;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        margin-top: 1.5rem;
+    }
+    
+    .legal-section p {
+        color: #495057;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .legal-section ul {
+        color: #495057;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    
+    .legal-section li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .highlight-box {
+        background: linear-gradient(135deg, #f0fff4 0%, #d4edda 100%);
+        border: 1px solid #28a745;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .highlight-box h4 {
+        color: #28a745;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .warning-box {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        border: 1px solid #ffc107;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .warning-box h4 {
+        color: #856404;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .contact-info {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-info h4 {
+        color: #343a40;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    .contact-info p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-info a {
+        color: #28a745;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        color: #1e7e34;
+        text-decoration: underline;
+    }
+    
+    .table-of-contents {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .table-of-contents h3 {
+        color: #343a40;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .table-of-contents ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .table-of-contents li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .table-of-contents a {
+        color: #28a745;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .table-of-contents a:hover {
+        color: #1e7e34;
+        text-decoration: underline;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .legal-container {
+            margin: 1rem;
+            border-radius: 8px;
+        }
+        
+        .legal-header {
+            padding: 2rem 1.5rem;
+        }
+        
+        .legal-title {
+            font-size: 2rem;
+        }
+        
+        .legal-content {
+            padding: 2rem 1.5rem;
+        }
+        
+        .legal-section h2 {
+            font-size: 1.3rem;
+        }
+        
+        .highlight-box,
+        .warning-box,
+        .contact-info,
+        .table-of-contents {
+            padding: 1rem;
+        }
+    }
+</style>
+
+<div class="legal-container">
+    <div class="legal-header">
+        <h1 class="legal-title">Terms of Service</h1>
+        <p class="legal-subtitle">jpg2pdf.at - JPG to PDF Converter</p>
+        <p class="legal-date">Last Updated: {{ "now"|date:"F j, Y" }}</p>
+    </div>
+    
+    <div class="legal-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                <li><a href="#service-description">2. Service Description</a></li>
+                <li><a href="#user-obligations">3. User Obligations</a></li>
+                <li><a href="#acceptable-use">4. Acceptable Use Policy</a></li>
+                <li><a href="#intellectual-property">5. Intellectual Property</a></li>
+                <li><a href="#privacy-data">6. Privacy and Data Handling</a></li>
+                <li><a href="#disclaimers">7. Disclaimers</a></li>
+                <li><a href="#limitation-liability">8. Limitation of Liability</a></li>
+                <li><a href="#indemnification">9. Indemnification</a></li>
+                <li><a href="#service-availability">10. Service Availability</a></li>
+                <li><a href="#termination">11. Termination</a></li>
+                <li><a href="#governing-law">12. Governing Law</a></li>
+                <li><a href="#dispute-resolution">13. Dispute Resolution</a></li>
+                <li><a href="#changes-terms">14. Changes to Terms</a></li>
+                <li><a href="#contact-information">15. Contact Information</a></li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>📋 Welcome to jpg2pdf.at</h4>
+            <p>By using our <strong>JPG to PDF converter</strong>, you agree to these Terms of Service. Our service is free, secure, and designed to respect your privacy while providing the best JPG to PDF conversion experience.</p>
+        </div>
+        
+        <div class="legal-section" id="acceptance">
+            <h2>1. Acceptance of Terms</h2>
+            
+            <h3>1.1 Agreement</h3>
+            <p>By accessing and using jpg2pdf.at (the "Service"), you accept and agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our JPG to PDF converter.</p>
+            
+            <h3>1.2 Legal Capacity</h3>
+            <p>By using our Service, you represent that:</p>
+            <ul>
+                <li>You are at least 18 years old, or</li>
+                <li>You are 13-17 years old and have parental consent, or</li>
+                <li>You are using the Service under parental supervision</li>
+                <li>You have the legal capacity to enter into this agreement</li>
+                <li>You are not prohibited from using the Service under applicable law</li>
+            </ul>
+            
+            <h3>1.3 Modifications</h3>
+            <p>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting. Your continued use of the JPG to PDF converter after changes constitutes acceptance of the modified Terms.</p>
+        </div>
+        
+        <div class="legal-section" id="service-description">
+            <h2>2. Service Description</h2>
+            
+            <h3>2.1 JPG to PDF Conversion Service</h3>
+            <p>jpg2pdf.at provides a free online JPG to PDF converter that allows users to:</p>
+            <ul>
+                <li>Convert JPG, PNG, GIF, and other image formats to PDF</li>
+                <li>Combine multiple images into a single PDF document</li>
+                <li>Download converted PDF files</li>
+                <li>Access the service from any device with internet connection</li>
+            </ul>
+            
+            <h3>2.2 Service Features</h3>
+            <ul>
+                <li><strong>Free Service:</strong> No charges, subscriptions, or hidden fees</li>
+                <li><strong>No Registration:</strong> Use without creating an account</li>
+                <li><strong>Batch Processing:</strong> Convert multiple images simultaneously</li>
+                <li><strong>Secure Processing:</strong> Files automatically deleted after conversion</li>
+                <li><strong>Cross-Platform:</strong> Works on desktop, tablet, and mobile devices</li>
+            </ul>
+            
+            <h3>2.3 Service Limitations</h3>
+            <ul>
+                <li>Maximum file size: 50MB per image</li>
+                <li>Supported formats: JPG, PNG, GIF, BMP, WebP</li>
+                <li>Files are available for download for 24 hours maximum</li>
+                <li>Service availability subject to maintenance and technical requirements</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="user-obligations">
+            <h2>3. User Obligations</h2>
+            
+            <h3>3.1 Lawful Use</h3>
+            <p>You agree to use our JPG to PDF converter only for lawful purposes and in accordance with these Terms. You are responsible for ensuring your use complies with all applicable laws and regulations.</p>
+            
+            <h3>3.2 File Responsibility</h3>
+            <p>You are solely responsible for:</p>
+            <ul>
+                <li>The content of files you upload for PDF conversion</li>
+                <li>Ensuring you have the right to convert and distribute the images</li>
+                <li>Complying with copyright and intellectual property laws</li>
+                <li>Not uploading illegal, harmful, or inappropriate content</li>
+                <li>Backing up important files before conversion</li>
+            </ul>
+            
+            <h3>3.3 Account Security</h3>
+            <p>While we don't require accounts, you are responsible for:</p>
+            <ul>
+                <li>Protecting your device and internet connection</li>
+                <li>Not sharing download links with unauthorized parties</li>
+                <li>Reporting any security concerns to us immediately</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="acceptable-use">
+            <h2>4. Acceptable Use Policy</h2>
+            
+            <div class="warning-box">
+                <h4>⚠️ Prohibited Activities</h4>
+                <p>Violation of these policies may result in immediate termination of service access and potential legal action.</p>
+            </div>
+            
+            <h3>4.1 Prohibited Content</h3>
+            <p>You may NOT upload files containing:</p>
+            <ul>
+                <li>Illegal content or content promoting illegal activities</li>
+                <li>Copyrighted material you don't own or have permission to use</li>
+                <li>Obscene, pornographic, or sexually explicit material</li>
+                <li>Content promoting violence, hate, or discrimination</li>
+                <li>Malware, viruses, or other malicious code</li>
+                <li>Personal information of others without consent</li>
+                <li>Content that violates any person's privacy rights</li>
+            </ul>
+            
+            <h3>4.2 Prohibited Activities</h3>
+            <p>You may NOT:</p>
+            <ul>
+                <li>Attempt to reverse engineer or hack our service</li>
+                <li>Use automated tools to access our service excessively</li>
+                <li>Interfere with or disrupt our service or servers</li>
+                <li>Violate any applicable laws or regulations</li>
+                <li>Impersonate others or provide false information</li>
+                <li>Use the service for commercial spam or bulk conversion without permission</li>
+                <li>Attempt to bypass our security measures</li>
+            </ul>
+            
+            <h3>4.3 Consequences</h3>
+            <p>Violation of this Acceptable Use Policy may result in:</p>
+            <ul>
+                <li>Immediate termination of service access</li>
+                <li>Removal of content and files</li>
+                <li>Legal action if required by law</li>
+                <li>Cooperation with law enforcement if necessary</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="intellectual-property">
+            <h2>5. Intellectual Property</h2>
+            
+            <h3>5.1 Our Intellectual Property</h3>
+            <p>jpg2pdf.at, our logo, design, and all content on our website are protected by intellectual property laws. This includes:</p>
+            <ul>
+                <li>Website design and user interface</li>
+                <li>Software and conversion algorithms</li>
+                <li>Trademarks and service marks</li>
+                <li>Text, graphics, and other content</li>
+            </ul>
+            
+            <h3>5.2 Your Content</h3>
+            <p>You retain all rights to the images you upload and PDFs we create. By using our service, you grant us:</p>
+            <ul>
+                <li>Limited license to process your files for conversion purposes only</li>
+                <li>Right to temporarily store files during processing</li>
+                <li>No rights to use, copy, or distribute your content beyond providing the service</li>
+            </ul>
+            
+            <h3>5.3 DMCA Compliance</h3>
+            <p>We respect intellectual property rights and comply with the Digital Millennium Copyright Act (DMCA). If you believe your copyrighted work has been infringed:</p>
+            <ul>
+                <li>Contact us immediately at legal@jpg2pdf.at</li>
+                <li>Provide detailed information about the alleged infringement</li>
+                <li>We will investigate and take appropriate action</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="privacy-data">
+            <h2>6. Privacy and Data Handling</h2>
+            
+            <div class="highlight-box">
+                <h4>🔒 Privacy First</h4>
+                <p>Your privacy is paramount. We automatically delete all uploaded images and generated PDFs within 24 hours. See our <a href="#" style="color: #28a745;">Privacy Policy</a> for complete details.</p>
+            </div>
+            
+            <h3>6.1 Data Processing</h3>
+            <ul>
+                <li>Files are processed securely and temporarily</li>
+                <li>No human review of your content</li>
+                <li>Automatic deletion within 24 hours</li>
+                <li>GDPR and CCPA compliant processing</li>
+            </ul>
+            
+            <h3>6.2 Analytics</h3>
+            <p>We may collect anonymous usage statistics to improve our service, including:</p>
+            <ul>
+                <li>Conversion success rates</li>
+                <li>Popular file formats</li>
+                <li>Performance metrics</li>
+                <li>Error rates and technical issues</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="disclaimers">
+            <h2>7. Disclaimers</h2>
+            
+            <div class="warning-box">
+                <h4>⚠️ Important Disclaimers</h4>
+                <p>Please read these disclaimers carefully. They limit our liability and explain the nature of our service.</p>
+            </div>
+            
+            <h3>7.1 Service Disclaimers</h3>
+            <p>OUR JPG TO PDF CONVERTER IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, INCLUDING:</p>
+            <ul>
+                <li><strong>No Warranty of Accuracy:</strong> We don't guarantee perfect conversion results</li>
+                <li><strong>No Uptime Guarantee:</strong> Service may be temporarily unavailable</li>
+                <li><strong>No Data Recovery:</strong> We cannot recover deleted files</li>
+                <li><strong>No Virus Scanning:</strong> Users responsible for file security</li>
+            </ul>
+            
+            <h3>7.2 Technical Limitations</h3>
+            <ul>
+                <li>Conversion quality depends on source image quality</li>
+                <li>Large files may take longer to process</li>
+                <li>Some file formats may not convert perfectly</li>
+                <li>Service performance may vary based on server load</li>
+            </ul>
+            
+            <h3>7.3 Legal Disclaimers</h3>
+            <ul>
+                <li>We are not responsible for the content of your files</li>
+                <li>Users must ensure compliance with applicable laws</li>
+                <li>We make no warranty regarding legal compliance of conversions</li>
+                <li>Professional advice should be sought for legal/business use</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="limitation-liability">
+            <h2>8. Limitation of Liability</h2>
+            
+            <h3>8.1 Limitation of Damages</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR:</p>
+            <ul>
+                <li>Loss of data or files</li>
+                <li>Business interruption or lost profits</li>
+                <li>Indirect, incidental, or consequential damages</li>
+                <li>Damages exceeding $100 USD in total</li>
+            </ul>
+            
+            <h3>8.2 Force Majeure</h3>
+            <p>We are not liable for service interruptions caused by:</p>
+            <ul>
+                <li>Natural disasters or acts of God</li>
+                <li>Government actions or regulations</li>
+                <li>Internet or infrastructure failures</li>
+                <li>Cyber attacks or security breaches beyond our control</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="indemnification">
+            <h2>9. Indemnification</h2>
+            
+            <p>You agree to indemnify and hold harmless jpg2pdf.at from any claims, damages, or expenses arising from:</p>
+            <ul>
+                <li>Your use of our JPG to PDF converter</li>
+                <li>Your violation of these Terms of Service</li>
+                <li>Your violation of any third-party rights</li>
+                <li>Content you upload or convert</li>
+                <li>Your negligent or unlawful conduct</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="service-availability">
+            <h2>10. Service Availability</h2>
+            
+            <h3>10.1 Uptime</h3>
+            <p>While we strive for maximum uptime, we do not guarantee:</p>
+            <ul>
+                <li>Continuous availability of the service</li>
+                <li>Error-free operation</li>
+                <li>Compatibility with all devices or browsers</li>
+                <li>Uninterrupted access during maintenance</li>
+            </ul>
+            
+            <h3>10.2 Maintenance</h3>
+            <ul>
+                <li>Scheduled maintenance will be announced when possible</li>
+                <li>Emergency maintenance may occur without notice</li>
+                <li>We will work to minimize service disruptions</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="termination">
+            <h2>11. Termination</h2>
+            
+            <h3>11.1 Termination by You</h3>
+            <p>You may stop using our service at any time. Since no account is required, simply stop accessing jpg2pdf.at.</p>
+            
+            <h3>11.2 Termination by Us</h3>
+            <p>We may terminate or suspend your access immediately if you:</p>
+            <ul>
+                <li>Violate these Terms of Service</li>
+                <li>Engage in prohibited activities</li>
+                <li>Use the service for illegal purposes</li>
+                <li>Abuse or attempt to hack our systems</li>
+            </ul>
+            
+            <h3>11.3 Effect of Termination</h3>
+            <ul>
+                <li>Your right to use the service ends immediately</li>
+                <li>We may delete any files associated with your use</li>
+                <li>Provisions that should survive termination will remain in effect</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="governing-law">
+            <h2>12. Governing Law</h2>
+            
+            <h3>12.1 Applicable Law</h3>
+            <p>These Terms are governed by the laws of Austria and the European Union, without regard to conflict of law principles.</p>
+            
+            <h3>12.2 Jurisdiction</h3>
+            <p>Any legal disputes will be resolved in the courts of Austria, and you consent to personal jurisdiction there.</p>
+            
+            <h3>12.3 EU Rights</h3>
+            <p>Nothing in these Terms affects your statutory rights under EU consumer protection laws.</p>
+        </div>
+        
+        <div class="legal-section" id="dispute-resolution">
+            <h2>13. Dispute Resolution</h2>
+            
+            <h3>13.1 Informal Resolution</h3>
+            <p>Before filing any legal claim, please contact us at legal@jpg2pdf.at to attempt informal resolution.</p>
+            
+            <h3>13.2 Arbitration</h3>
+            <p>If informal resolution fails, disputes may be resolved through binding arbitration rather than court proceedings.</p>
+            
+            <h3>13.3 Class Action Waiver</h3>
+            <p>You agree to resolve disputes individually and waive any right to participate in class action lawsuits.</p>
+        </div>
+        
+        <div class="legal-section" id="changes-terms">
+            <h2>14. Changes to Terms</h2>
+            
+            <h3>14.1 Updates</h3>
+            <p>We may update these Terms to reflect:</p>
+            <ul>
+                <li>Changes in our service features</li>
+                <li>Legal or regulatory requirements</li>
+                <li>Industry best practices</li>
+                <li>User feedback and improvements</li>
+            </ul>
+            
+            <h3>14.2 Notification</h3>
+            <ul>
+                <li>Changes will be posted on this page</li>
+                <li>Significant changes will be announced on our homepage</li>
+                <li>You'll have 30 days to review major changes</li>
+                <li>Continued use indicates acceptance of changes</li>
+            </ul>
+        </div>
+        
+        <div class="legal-section" id="contact-information">
+            <h2>15. Contact Information</h2>
+            
+            <div class="contact-info">
+                <h4>Legal Inquiries</h4>
+                <p><strong>Email:</strong> <a href="mailto:legal@jpg2pdf.at">legal@jpg2pdf.at</a></p>
+                <p><strong>General Support:</strong> <a href="mailto:support@jpg2pdf.at">support@jpg2pdf.at</a></p>
+                <p><strong>Website:</strong> <a href="https://jpg2pdf.at">jpg2pdf.at</a></p>
+                <p><strong>Response Time:</strong> We respond to legal inquiries within 7 business days</p>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>📞 Questions About These Terms?</h4>
+                <p>If you have any questions about these Terms of Service or need clarification about your rights and obligations, please don't hesitate to contact us. We're committed to transparency and fair treatment of all users.</p>
+            </div>
+            
+            <div class="legal-section">
+                <h3>Severability</h3>
+                <p>If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+                
+                <h3>Entire Agreement</h3>
+                <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and jpg2pdf.at regarding your use of our JPG to PDF converter service.</p>
+                
+                <h3>Waiver</h3>
+                <p>Our failure to enforce any right or provision of these Terms will not be deemed a waiver of such right or provision.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
