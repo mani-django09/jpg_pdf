@@ -1,4 +1,4 @@
-# converter/views.py
+# converter/views.py - COMPLETE VERSION WITH DOWNLOAD PAGE
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse, HttpResponse, Http404
 from django.views.decorators.csrf import csrf_exempt
@@ -18,7 +18,6 @@ from reportlab.lib.pagesizes import letter, A4
 from io import BytesIO
 from django.contrib import messages
 from django.core.mail import send_mail
-
 
 try:
     import magic
@@ -108,6 +107,7 @@ def upload_file(request):
             return JsonResponse({
                 'success': True,
                 'job_id': str(job.id),
+                'redirect_url': f'/download-page/{job.id}/',  # NEW: Redirect to download page
                 'download_url': f'/download/{job.id}/',
                 'original_filename': job.original_filename,
                 'converted_filename': job.converted_filename
@@ -167,6 +167,38 @@ def validate_file_type(uploaded_file):
             pass
     
     return True
+
+def download_page(request, job_id):
+    """Display download page with file information - NEW FUNCTION"""
+    try:
+        job = get_object_or_404(ConversionJob, id=job_id)
+        
+        if job.status != 'completed':
+            # If job is not completed, show appropriate page
+            if job.status == 'failed':
+                return render(request, 'converter/error.html', {
+                    'error_message': job.error_message or 'Conversion failed. Please try again.',
+                    'page_title': 'Conversion Failed - JPG to PDF Converter'
+                })
+            else:
+                # Still processing
+                return render(request, 'converter/processing.html', {
+                    'job': job,
+                    'page_title': 'Processing Your Conversion...'
+                })
+        
+        return render(request, 'converter/download.html', {
+            'job': job,
+            'page_title': f'Download {job.converted_filename} - JPG to PDF Converter',
+            'meta_description': 'Download your converted PDF file. High-quality JPG to PDF conversion completed successfully.',
+        })
+        
+    except Exception as e:
+        logger.error(f"Download page error for job {job_id}: {str(e)}")
+        return render(request, 'converter/error.html', {
+            'error_message': 'Unable to load download page. The file may have expired.',
+            'page_title': 'Error - JPG to PDF Converter'
+        })
 
 def download_file(request, job_id):
     """Download converted file"""
@@ -279,7 +311,6 @@ def convert_image_to_pdf(input_path, output_dir, job_id):
             img_width, img_height = img.size
             
             # Calculate appropriate page size (convert pixels to points, assuming 72 DPI)
-            # Limit maximum size to A4 for reasonable file sizes
             max_width, max_height = A4  # A4 size in points
             
             # Calculate scaling factor to fit within A4
@@ -387,75 +418,25 @@ def compress_image(input_path, output_dir, job_id, quality=75):
         logger.error(f"Image compression failed: {str(e)}")
         raise Exception(f"Failed to compress image: {str(e)}")
 
-# Cleanup function to remove old files (can be called via management command)
-def cleanup_old_files():
-    """Remove files older than 24 hours"""
-    try:
-        from datetime import timedelta
-        cutoff_time = timezone.now() - timedelta(hours=24)
-        
-        old_jobs = ConversionJob.objects.filter(created_at__lt=cutoff_time)
-        
-        for job in old_jobs:
-            # Delete associated files
-            try:
-                if job.converted_filename:
-                    converted_path = os.path.join(settings.MEDIA_ROOT, 'converted', job.converted_filename)
-                    if os.path.exists(converted_path):
-                        os.remove(converted_path)
-                
-                # Delete uploaded file
-                upload_path = os.path.join(settings.MEDIA_ROOT, 'uploads', f"{job.id}_*")
-                import glob
-                for file_path in glob.glob(upload_path):
-                    if os.path.exists(file_path):
-                        os.remove(file_path)
-                        
-            except Exception as e:
-                logger.warning(f"Failed to delete files for job {job.id}: {str(e)}")
-            
-            # Delete job record
-            job.delete()
-        
-        logger.info(f"Cleaned up {old_jobs.count()} old conversion jobs")
-        
-    except Exception as e:
-        logger.error(f"Cleanup failed: {str(e)}")
-
-# Error handler for development
-def handle_conversion_error(request, exception):
-    """Custom error handler for conversion errors"""
-    logger.error(f"Conversion error: {str(exception)}")
-    
-    if request.headers.get('Content-Type') == 'application/json':
-        return JsonResponse({
-            'success': False,
-            'error': 'An error occurred during file conversion. Please try again.'
-        }, status=500)
-    else:
-        return render(request, 'converter/error.html', {
-            'error_message': 'An error occurred during file conversion.'
-        })
-
 def privacy_policy(request):
     """Privacy Policy page"""
     return render(request, 'converter/privacy_policy.html', {
         'page_title': 'Privacy Policy - JPG to PDF Converter',
-        'meta_description': 'Privacy Policy for jpg2pdf.at JPG to PDF converter. Learn how we protect your data during JPG to PDF conversion.',
+        'meta_description': 'Privacy Policy for jpg2pdf.link JPG to PDF converter. Learn how we protect your data during JPG to PDF conversion.',
     })
 
 def terms_of_service(request):
     """Terms of Service page"""
     return render(request, 'converter/terms_of_service.html', {
         'page_title': 'Terms of Service - JPG to PDF Converter',
-        'meta_description': 'Terms of Service for jpg2pdf.at JPG to PDF converter. Legal terms and conditions for using our service.',
+        'meta_description': 'Terms of Service for jpg2pdf.link JPG to PDF converter. Legal terms and conditions for using our service.',
     })
 
 def contact_us(request):
     """Contact Us page"""
     return render(request, 'converter/contact_us.html', {
         'page_title': 'Contact Us - JPG to PDF Converter Support',
-        'meta_description': 'Contact jpg2pdf.at for support with JPG to PDF conversion, feedback, or questions.',
+        'meta_description': 'Contact jpg2pdf.link for support with JPG to PDF conversion, feedback, or questions.',
     })
 
 @csrf_exempt
@@ -487,6 +468,8 @@ def contact_submit(request):
             }, status=400)
         
         # Message length validation
+        # Continuation of views.py - contact_submit function completion
+
         if len(message) < 10:
             return JsonResponse({
                 'success': False,
@@ -513,9 +496,9 @@ def contact_submit(request):
         inquiry_type_display = inquiry_types.get(inquiry_type, 'Other')
         
         # Email to admin
-        admin_subject = f'[jpg2pdf.at] {inquiry_type_display}: {subject}'
+        admin_subject = f'[jpg2pdf.link] {inquiry_type_display}: {subject}'
         admin_message = f"""
-New contact form submission from jpg2pdf.at:
+New contact form submission from jpg2pdf.link:
 
 Type: {inquiry_type_display}
 Name: {name}
@@ -526,17 +509,17 @@ Message:
 {message}
 
 ---
-Sent from jpg2pdf.at contact form
+Sent from jpg2pdf.link contact form
 IP: {request.META.get('REMOTE_ADDR', 'Unknown')}
 User Agent: {request.META.get('HTTP_USER_AGENT', 'Unknown')}
 """
         
         # Auto-reply to user
-        user_subject = f'Thank you for contacting jpg2pdf.at - {subject}'
+        user_subject = f'Thank you for contacting jpg2pdf.link - {subject}'
         user_message = f"""
 Dear {name},
 
-Thank you for contacting jpg2pdf.at! We have received your message regarding: {subject}
+Thank you for contacting jpg2pdf.link! We have received your message regarding: {subject}
 
 Inquiry Type: {inquiry_type_display}
 
@@ -548,11 +531,11 @@ Your message:
 "{message}"
 
 Best regards,
-The jpg2pdf.at Team
+The jpg2pdf.link Team
 
 ---
 This is an automated response. Please do not reply to this email.
-For support, contact us at support@jpg2pdf.at
+For support, contact us at support@jpg2pdf.link
 """
         
         try:
@@ -561,7 +544,7 @@ For support, contact us at support@jpg2pdf.at
                 admin_subject,
                 admin_message,
                 settings.DEFAULT_FROM_EMAIL,
-                ['support@jpg2pdf.at'],  # Replace with your admin email
+                ['support@jpg2pdf.link'],  # Replace with your admin email
                 fail_silently=False,
             )
             
@@ -589,17 +572,12 @@ For support, contact us at support@jpg2pdf.at
         logger.error(f"Contact form submission error: {str(e)}")
         return JsonResponse({
             'success': False,
-            'error': 'An error occurred while sending your message. Please try again or contact us directly at support@jpg2pdf.at'
+            'error': 'An error occurred while sending your message. Please try again or contact us directly at support@jpg2pdf.link'
         }, status=500)
-    
-# Add this to your converter/views.py file
-
-from django.http import HttpResponse
-from django.template.loader import render_to_string
 
 def robots_txt(request):
     """Serve robots.txt file"""
-    content = """# robots.txt for jpg2pdf.at
+    content = """# robots.txt for jpg2pdf.link
 # JPG to PDF Converter Website
 
 User-agent: *
@@ -673,3 +651,53 @@ Crawl-delay: 1""".format(
     )
     
     return HttpResponse(content, content_type="text/plain")
+
+# Cleanup function to remove old files (can be called via management command)
+def cleanup_old_files():
+    """Remove files older than 24 hours"""
+    try:
+        from datetime import timedelta
+        cutoff_time = timezone.now() - timedelta(hours=24)
+        
+        old_jobs = ConversionJob.objects.filter(created_at__lt=cutoff_time)
+        
+        for job in old_jobs:
+            # Delete associated files
+            try:
+                if job.converted_filename:
+                    converted_path = os.path.join(settings.MEDIA_ROOT, 'converted', job.converted_filename)
+                    if os.path.exists(converted_path):
+                        os.remove(converted_path)
+                
+                # Delete uploaded file
+                upload_path = os.path.join(settings.MEDIA_ROOT, 'uploads', f"{job.id}_*")
+                import glob
+                for file_path in glob.glob(upload_path):
+                    if os.path.exists(file_path):
+                        os.remove(file_path)
+                        
+            except Exception as e:
+                logger.warning(f"Failed to delete files for job {job.id}: {str(e)}")
+            
+            # Delete job record
+            job.delete()
+        
+        logger.info(f"Cleaned up {old_jobs.count()} old conversion jobs")
+        
+    except Exception as e:
+        logger.error(f"Cleanup failed: {str(e)}")
+
+# Error handler for development
+def handle_conversion_error(request, exception):
+    """Custom error handler for conversion errors"""
+    logger.error(f"Conversion error: {str(exception)}")
+    
+    if request.headers.get('Content-Type') == 'application/json':
+        return JsonResponse({
+            'success': False,
+            'error': 'An error occurred during file conversion. Please try again.'
+        }, status=500)
+    else:
+        return render(request, 'converter/error.html', {
+            'error_message': 'An error occurred during file conversion.'
+        })

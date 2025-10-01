@@ -1,0 +1,343 @@
+{% extends 'base.html' %}
+
+{% block title %}Download Your PDF - Free JPG to PDF Converter{% endblock %}
+{% block meta_description %}Download your converted PDF file. High-quality JPG to PDF conversion completed successfully.{% endblock %}
+
+{% block content %}
+<style>
+    .download-container {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .download-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        text-align: center;
+        animation: slideUp 0.4s ease-out;
+    }
+
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .success-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        animation: scaleIn 0.5s ease-out 0.1s both;
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .success-icon i {
+        font-size: 1.75rem;
+        color: white;
+    }
+
+    .download-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 0.25rem;
+    }
+
+    .download-subtitle {
+        color: #6c757d;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .file-info {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+    .file-info-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+        font-size: 0.85rem;
+    }
+
+    .file-info-item:not(:last-child) {
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .file-info-label {
+        color: #6c757d;
+        font-weight: 600;
+    }
+
+    .file-info-value {
+        color: #1a1a2e;
+        font-weight: 600;
+        max-width: 60%;
+        text-align: right;
+        word-break: break-word;
+    }
+
+    .download-btn {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        padding: 0.875rem 2rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+    }
+
+    .download-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        text-decoration: none;
+        color: white;
+    }
+
+    .download-btn i {
+        font-size: 1.1rem;
+    }
+
+    .secondary-actions {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        padding-top: 1rem;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .secondary-btn {
+        background: transparent;
+        color: #6c757d;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .secondary-btn:hover {
+        background: #f8f9fa;
+        color: #667eea;
+        text-decoration: none;
+    }
+
+    .security-note {
+        background: #e8f5e9;
+        border-left: 3px solid #4caf50;
+        border-radius: 4px;
+        padding: 0.75rem;
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+        color: #2e7d32;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .security-note i {
+        font-size: 1rem;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+        .download-card {
+            padding: 1.5rem 1rem;
+        }
+
+        .download-title {
+            font-size: 1.3rem;
+        }
+
+        .secondary-actions {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .secondary-btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .file-info-value {
+            max-width: 50%;
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+<div class="download-container">
+    <div class="download-card">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+
+        <h1 class="download-title">PDF Ready!</h1>
+        <p class="download-subtitle">Conversion completed successfully</p>
+
+        <div class="file-info">
+            <div class="file-info-item">
+                <span class="file-info-label">File:</span>
+                <span class="file-info-value">{{ job.original_filename }}</span>
+            </div>
+            <div class="file-info-item">
+                <span class="file-info-label">Format:</span>
+                <span class="file-info-value">PDF Document</span>
+            </div>
+            <div class="file-info-item">
+                <span class="file-info-label">Size:</span>
+                <span class="file-info-value" id="fileSize">...</span>
+            </div>
+            <div class="file-info-item">
+                <span class="file-info-label">Quality:</span>
+                <span class="file-info-value">High</span>
+            </div>
+        </div>
+
+        <a href="{% url 'converter:download_file' job.id %}" class="download-btn" download>
+            <i class="fas fa-download"></i>
+            Download PDF
+        </a>
+
+        <div class="secondary-actions">
+            <a href="{% url 'converter:home' %}" class="secondary-btn">
+                <i class="fas fa-plus"></i>
+                Convert Another
+            </a>
+            <button class="secondary-btn" onclick="shareFile()">
+                <i class="fas fa-share-alt"></i>
+                Share
+            </button>
+        </div>
+
+        <div class="security-note">
+            <i class="fas fa-shield-alt"></i>
+            <span>Auto-deleted after 24 hours</span>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    'use strict';
+
+    // Calculate file size
+    fetch('{% url "converter:download_file" job.id %}', { method: 'HEAD' })
+        .then(response => {
+            const size = response.headers.get('Content-Length');
+            if (size) {
+                const sizeInKB = (parseInt(size) / 1024).toFixed(2);
+                const sizeInMB = (parseInt(size) / (1024 * 1024)).toFixed(2);
+                const displaySize = sizeInMB >= 1 ? `${sizeInMB} MB` : `${sizeInKB} KB`;
+                document.getElementById('fileSize').textContent = displaySize;
+            } else {
+                document.getElementById('fileSize').textContent = 'Unknown';
+            }
+        })
+        .catch(() => {
+            document.getElementById('fileSize').textContent = 'Unknown';
+        });
+
+    // Share functionality
+    window.shareFile = function() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'JPG to PDF Conversion',
+                text: 'Converted my images to PDF using jpg2pdf.link',
+                url: window.location.origin
+            }).catch(() => {
+                fallbackShare();
+            });
+        } else {
+            fallbackShare();
+        }
+    };
+
+    function fallbackShare() {
+        const url = window.location.origin;
+        const textarea = document.createElement('textarea');
+        textarea.value = url;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        
+        try {
+            document.execCommand('copy');
+            showNotification('Link copied!', 'success');
+        } catch (err) {
+            showNotification('Copy failed', 'error');
+        }
+        
+        document.body.removeChild(textarea);
+    }
+
+    function showNotification(message, type) {
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 10000;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        `;
+
+        notification.style.background = type === 'error' ? '#f5576c' : '#11998e';
+        notification.textContent = message;
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+            notification.style.opacity = '0';
+            notification.style.transition = 'opacity 0.3s';
+            setTimeout(() => notification.remove(), 300);
+        }, 2500);
+    }
+})();
+</script>
+
+{% endblock %}

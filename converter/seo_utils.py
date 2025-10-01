@@ -29,9 +29,9 @@ def generate_structured_data(page_type='website', **kwargs):
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "JPG to PDF Converter",
-        "alternateName": "jpg2pdf.at",
+        "alternateName": "jpg2pdf.link",
         "description": "Convert JPG images to PDF online for free. Fast, secure, and easy-to-use image to PDF converter.",
-        "url": "https://jpg2pdf.at",
+        "url": "https://jpg2pdf.link",
         "applicationCategory": "UtilityApplication",
         "operatingSystem": "Any",
         "browserRequirements": "Requires JavaScript. Modern browser recommended.",
@@ -52,7 +52,7 @@ def generate_structured_data(page_type='website', **kwargs):
         "publisher": {
             "@type": "Organization",
             "name": "JPG2PDF Converter",
-            "url": "https://jpg2pdf.at"
+            "url": "https://jpg2pdf.link"
         }
     }
     
@@ -64,15 +64,15 @@ def generate_structured_data(page_type='website', **kwargs):
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "How do I convert JPG to PDF using jpg2pdf.at?",
+                    "name": "How do I convert JPG to PDF using jpg2pdf.link?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Converting JPG to PDF at jpg2pdf.at is simple: upload your JPG images, click 'Convert JPG to PDF', and download your PDF file. Our online JPG to PDF converter handles the entire process automatically."
+                        "text": "Converting JPG to PDF at jpg2pdf.link is simple: upload your JPG images, click 'Convert JPG to PDF', and download your PDF file. Our online JPG to PDF converter handles the entire process automatically."
                     }
                 },
                 {
                     "@type": "Question", 
-                    "name": "Is JPG to PDF conversion secure at jpg2pdf.at?",
+                    "name": "Is JPG to PDF conversion secure at jpg2pdf.link?",
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Absolutely! Your JPG files are processed securely using encrypted connections. All uploaded JPG images and generated PDF files are automatically deleted from our servers within 24 hours."
@@ -83,7 +83,7 @@ def generate_structured_data(page_type='website', **kwargs):
                     "name": "Do I need to register to use the JPG to PDF converter?",
                     "acceptedAnswer": {
                         "@type": "Answer", 
-                        "text": "No registration required! Our JPG to PDF converter at jpg2pdf.at is completely free and anonymous. Simply upload your JPG images, convert to PDF, and download your file immediately."
+                        "text": "No registration required! Our JPG to PDF converter at jpg2pdf.link is completely free and anonymous. Simply upload your JPG images, convert to PDF, and download your file immediately."
                     }
                 }
             ]
@@ -96,8 +96,8 @@ def generate_structured_data(page_type='website', **kwargs):
             "@context": "https://schema.org",
             "@type": "HowTo",
             "name": "How to Convert JPG to PDF Online Free",
-            "description": "Step-by-step guide to convert JPG images to PDF using jpg2pdf.at free online converter",
-            "image": "https://jpg2pdf.at/static/images/jpg-to-pdf-guide.jpg",
+            "description": "Step-by-step guide to convert JPG images to PDF using jpg2pdf.link free online converter",
+            "image": "https://jpg2pdf.link/static/images/jpg-to-pdf-guide.jpg",
             "totalTime": "PT2M",
             "estimatedCost": {
                 "@type": "MonetaryAmount",
@@ -109,19 +109,19 @@ def generate_structured_data(page_type='website', **kwargs):
                     "@type": "HowToStep",
                     "name": "Upload JPG Images",
                     "text": "Click 'Select JPG Files' or drag and drop your images into the upload area",
-                    "image": "https://jpg2pdf.at/static/images/step1-upload.jpg"
+                    "image": "https://jpg2pdf.link/static/images/step1-upload.jpg"
                 },
                 {
                     "@type": "HowToStep", 
                     "name": "Convert to PDF",
                     "text": "Click the 'Convert JPG to PDF' button to start the conversion process",
-                    "image": "https://jpg2pdf.at/static/images/step2-convert.jpg"
+                    "image": "https://jpg2pdf.link/static/images/step2-convert.jpg"
                 },
                 {
                     "@type": "HowToStep",
                     "name": "Download PDF",
                     "text": "Download your converted PDF file instantly when the conversion is complete",
-                    "image": "https://jpg2pdf.at/static/images/step3-download.jpg"
+                    "image": "https://jpg2pdf.link/static/images/step3-download.jpg"
                 }
             ]
         }

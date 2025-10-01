@@ -501,3 +501,199 @@ INFO 2025-06-28 13:23:59,948 views 22212 24964 Conversion completed for job 6245
 INFO 2025-06-28 13:23:59,966 basehttp 22212 24964 "POST /upload/ HTTP/1.1" 200 275
 INFO 2025-06-28 13:24:02,248 views 22212 24964 File 6245013f-f94b-4c0a-99b2-67337fff3153_converted.pdf downloaded successfully
 INFO 2025-06-28 13:24:02,248 basehttp 22212 24964 "GET /download/6245013f-f94b-4c0a-99b2-67337fff3153/ HTTP/1.1" 200 48115
+INFO 2025-10-01 00:00:07,826 autoreload 23016 22096 Watching for file changes with StatReloader
+INFO 2025-10-01 00:00:12,037 basehttp 23016 21956 "GET / HTTP/1.1" 200 103893
+WARNING 2025-10-01 00:00:22,566 log 23016 23500 Not Found: /favicon.ico
+WARNING 2025-10-01 00:00:22,570 basehttp 23016 23500 "GET /favicon.ico HTTP/1.1" 404 4165
+INFO 2025-10-01 00:24:24,498 autoreload 25268 25168 Watching for file changes with StatReloader
+INFO 2025-10-01 00:24:29,565 basehttp 25268 2600 "GET / HTTP/1.1" 200 93810
+INFO 2025-10-01 08:12:55,942 basehttp 25268 24848 "GET / HTTP/1.1" 200 96076
+INFO 2025-10-01 08:13:22,638 basehttp 25268 17360 "GET / HTTP/1.1" 200 96005
+INFO 2025-10-01 08:13:37,251 basehttp 25268 28060 "GET / HTTP/1.1" 200 95963
+INFO 2025-10-01 08:22:53,134 basehttp 25268 18388 "GET / HTTP/1.1" 200 75543
+INFO 2025-10-01 08:35:49,453 basehttp 25268 8256 "GET / HTTP/1.1" 200 61442
+INFO 2025-10-01 08:42:38,265 basehttp 25268 22536 "GET / HTTP/1.1" 200 57787
+INFO 2025-10-01 08:43:20,864 basehttp 25268 1856 "GET / HTTP/1.1" 200 61442
+INFO 2025-10-01 08:43:38,839 views 25268 4608 Created conversion job 68ad4d92-7098-4446-8a91-2f20d6e2717e for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 08:43:38,928 views 25268 4608 Saved file to uploads/68ad4d92-7098-4446-8a91-2f20d6e2717e_cebc2cd1.jpg
+INFO 2025-10-01 08:43:39,896 views 25268 4608 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\68ad4d92-7098-4446-8a91-2f20d6e2717e_converted.pdf
+INFO 2025-10-01 08:43:39,921 views 25268 4608 Conversion completed for job 68ad4d92-7098-4446-8a91-2f20d6e2717e
+INFO 2025-10-01 08:43:39,930 basehttp 25268 4608 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 08:43:40,064 views 25268 4608 File 68ad4d92-7098-4446-8a91-2f20d6e2717e_converted.pdf downloaded successfully
+INFO 2025-10-01 08:43:40,066 basehttp 25268 4608 "GET /download/68ad4d92-7098-4446-8a91-2f20d6e2717e/ HTTP/1.1" 200 228686
+INFO 2025-10-01 08:48:38,397 basehttp 25268 26208 "GET / HTTP/1.1" 200 18845
+INFO 2025-10-01 08:51:07,780 basehttp 25268 31740 "GET / HTTP/1.1" 200 39528
+INFO 2025-10-01 08:51:29,118 basehttp 25268 16392 "GET / HTTP/1.1" 200 61442
+INFO 2025-10-01 08:51:54,302 basehttp 25268 30616 "GET / HTTP/1.1" 200 58887
+INFO 2025-10-01 08:52:41,570 basehttp 25268 26824 "GET / HTTP/1.1" 200 58882
+INFO 2025-10-01 08:56:17,269 basehttp 25268 20788 "GET / HTTP/1.1" 200 56890
+INFO 2025-10-01 08:59:20,007 basehttp 25268 21736 "GET / HTTP/1.1" 200 24397
+INFO 2025-10-01 09:05:13,419 basehttp 25268 31416 "GET / HTTP/1.1" 200 58007
+INFO 2025-10-01 09:05:36,569 views 25268 25612 Created conversion job 89b3452c-7f82-4578-80d0-d198270fc211 for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:05:36,593 views 25268 25612 Saved file to uploads/89b3452c-7f82-4578-80d0-d198270fc211_ec356f2f.jpg
+INFO 2025-10-01 09:05:36,849 views 25268 25612 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\89b3452c-7f82-4578-80d0-d198270fc211_converted.pdf
+INFO 2025-10-01 09:05:36,884 views 25268 25612 Conversion completed for job 89b3452c-7f82-4578-80d0-d198270fc211
+INFO 2025-10-01 09:05:36,893 basehttp 25268 25612 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 09:05:36,997 views 25268 25612 File 89b3452c-7f82-4578-80d0-d198270fc211_converted.pdf downloaded successfully
+INFO 2025-10-01 09:05:37,001 basehttp 25268 25612 "GET /download/89b3452c-7f82-4578-80d0-d198270fc211/ HTTP/1.1" 200 228687
+INFO 2025-10-01 09:08:12,209 basehttp 25268 4664 "GET / HTTP/1.1" 200 57694
+INFO 2025-10-01 09:08:24,580 views 25268 17488 Created conversion job 9e8f8915-ad77-440e-9945-4bbe6db527fa for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:08:24,604 views 25268 17488 Saved file to uploads/9e8f8915-ad77-440e-9945-4bbe6db527fa_5f558386.jpg
+INFO 2025-10-01 09:08:25,049 views 25268 17488 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\9e8f8915-ad77-440e-9945-4bbe6db527fa_converted.pdf
+INFO 2025-10-01 09:08:25,085 views 25268 17488 Conversion completed for job 9e8f8915-ad77-440e-9945-4bbe6db527fa
+INFO 2025-10-01 09:08:25,101 basehttp 25268 17488 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 09:08:26,232 views 25268 17488 File 9e8f8915-ad77-440e-9945-4bbe6db527fa_converted.pdf downloaded successfully
+INFO 2025-10-01 09:08:26,234 basehttp 25268 17488 "GET /download/9e8f8915-ad77-440e-9945-4bbe6db527fa/ HTTP/1.1" 200 228686
+INFO 2025-10-01 09:08:58,027 basehttp 25268 9820 "GET / HTTP/1.1" 200 57694
+INFO 2025-10-01 09:09:03,173 views 25268 9820 Created conversion job 7bd3485a-7291-4de3-8b2d-d5c24f562e72 for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:09:03,173 views 25268 9820 Saved file to uploads/7bd3485a-7291-4de3-8b2d-d5c24f562e72_58667699.jpg
+INFO 2025-10-01 09:09:03,372 views 25268 9820 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\7bd3485a-7291-4de3-8b2d-d5c24f562e72_converted.pdf
+INFO 2025-10-01 09:09:03,372 views 25268 9820 Conversion completed for job 7bd3485a-7291-4de3-8b2d-d5c24f562e72
+INFO 2025-10-01 09:09:03,372 basehttp 25268 9820 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 09:09:04,524 views 25268 9820 File 7bd3485a-7291-4de3-8b2d-d5c24f562e72_converted.pdf downloaded successfully
+INFO 2025-10-01 09:09:04,524 basehttp 25268 9820 "GET /download/7bd3485a-7291-4de3-8b2d-d5c24f562e72/ HTTP/1.1" 200 228684
+INFO 2025-10-01 09:09:33,018 basehttp 25268 3424 "GET / HTTP/1.1" 200 57694
+INFO 2025-10-01 09:09:35,069 basehttp 25268 22168 "GET / HTTP/1.1" 200 57694
+INFO 2025-10-01 09:13:01,111 basehttp 25268 24620 "GET / HTTP/1.1" 200 57750
+INFO 2025-10-01 09:13:07,891 views 25268 31096 Created conversion job 79e68592-58a0-4601-aeab-9fcef83ae92e for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:13:07,903 views 25268 31096 Saved file to uploads/79e68592-58a0-4601-aeab-9fcef83ae92e_ca9364ae.jpg
+INFO 2025-10-01 09:13:08,125 views 25268 31096 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\79e68592-58a0-4601-aeab-9fcef83ae92e_converted.pdf
+INFO 2025-10-01 09:13:08,144 views 25268 31096 Conversion completed for job 79e68592-58a0-4601-aeab-9fcef83ae92e
+INFO 2025-10-01 09:13:08,154 basehttp 25268 31096 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 09:13:09,394 views 25268 31096 File 79e68592-58a0-4601-aeab-9fcef83ae92e_converted.pdf downloaded successfully
+INFO 2025-10-01 09:13:09,407 basehttp 25268 31096 "GET /download/79e68592-58a0-4601-aeab-9fcef83ae92e/ HTTP/1.1" 200 228687
+INFO 2025-10-01 09:13:38,091 autoreload 25268 25168 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 09:13:39,806 autoreload 16524 432 Watching for file changes with StatReloader
+INFO 2025-10-01 09:14:13,222 autoreload 16524 432 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-10-01 09:14:13,948 autoreload 17180 23600 Watching for file changes with StatReloader
+INFO 2025-10-01 09:14:17,417 basehttp 17180 25352 "GET / HTTP/1.1" 200 57750
+INFO 2025-10-01 09:14:26,731 views 17180 3040 Created conversion job 556ed42f-9dd2-4836-be83-24578e2fc812 for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:14:26,737 views 17180 3040 Saved file to uploads/556ed42f-9dd2-4836-be83-24578e2fc812_f8e4383f.jpg
+INFO 2025-10-01 09:14:26,948 views 17180 3040 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\556ed42f-9dd2-4836-be83-24578e2fc812_converted.pdf
+INFO 2025-10-01 09:14:26,981 views 17180 3040 Conversion completed for job 556ed42f-9dd2-4836-be83-24578e2fc812
+INFO 2025-10-01 09:14:26,984 basehttp 17180 3040 "POST /upload/ HTTP/1.1" 200 267
+INFO 2025-10-01 09:14:28,066 views 17180 3040 File 556ed42f-9dd2-4836-be83-24578e2fc812_converted.pdf downloaded successfully
+INFO 2025-10-01 09:14:28,066 basehttp 17180 3040 "GET /download/556ed42f-9dd2-4836-be83-24578e2fc812/ HTTP/1.1" 200 228687
+INFO 2025-10-01 09:14:36,517 autoreload 17180 23600 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-10-01 09:14:37,180 autoreload 24276 20544 Watching for file changes with StatReloader
+INFO 2025-10-01 09:14:41,754 autoreload 24276 20544 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 09:14:42,347 autoreload 29948 15632 Watching for file changes with StatReloader
+INFO 2025-10-01 09:14:55,081 basehttp 29948 22428 "GET / HTTP/1.1" 200 58007
+INFO 2025-10-01 09:15:12,678 basehttp 29948 24908 "GET / HTTP/1.1" 200 57750
+INFO 2025-10-01 09:28:16,941 basehttp 29948 11968 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:28:31,140 views 29948 11180 Created conversion job cf6cdb97-f7c4-4083-b6fc-a4433b7134db for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:28:31,161 views 29948 11180 Saved file to uploads/cf6cdb97-f7c4-4083-b6fc-a4433b7134db_e3e31c38.jpg
+INFO 2025-10-01 09:28:31,539 views 29948 11180 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\cf6cdb97-f7c4-4083-b6fc-a4433b7134db_converted.pdf
+INFO 2025-10-01 09:28:31,550 views 29948 11180 Conversion completed for job cf6cdb97-f7c4-4083-b6fc-a4433b7134db
+INFO 2025-10-01 09:28:31,557 basehttp 29948 11180 "POST /upload/ HTTP/1.1" 200 267
+WARNING 2025-10-01 09:28:33,552 log 29948 11180 Not Found: /download-page/cf6cdb97-f7c4-4083-b6fc-a4433b7134db/
+WARNING 2025-10-01 09:28:33,555 basehttp 29948 11180 "GET /download-page/cf6cdb97-f7c4-4083-b6fc-a4433b7134db/ HTTP/1.1" 404 4285
+INFO 2025-10-01 09:30:01,745 autoreload 29948 15632 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\urls.py changed, reloading.
+INFO 2025-10-01 09:30:02,829 autoreload 4132 28832 Watching for file changes with StatReloader
+INFO 2025-10-01 09:30:17,055 autoreload 4132 28832 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 09:30:17,804 autoreload 10944 26232 Watching for file changes with StatReloader
+INFO 2025-10-01 09:30:35,471 autoreload 10944 26232 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 09:30:36,126 autoreload 14076 31536 Watching for file changes with StatReloader
+ERROR 2025-10-01 09:30:39,096 views 14076 28060 Download page error for job cf6cdb97-f7c4-4083-b6fc-a4433b7134db: converter/download.html
+ERROR 2025-10-01 09:30:39,487 log 14076 28060 Internal Server Error: /download-page/cf6cdb97-f7c4-4083-b6fc-a4433b7134db/
+Traceback (most recent call last):
+  File "C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py", line 697, in download_page
+    return render(request, 'converter/download.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: converter/download.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py", line 705, in download_page
+    return render(request, 'converter/error.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\manik\AppData\Roaming\Python\Python312\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: converter/error.html
+ERROR 2025-10-01 09:30:39,495 basehttp 14076 28060 "GET /download-page/cf6cdb97-f7c4-4083-b6fc-a4433b7134db/ HTTP/1.1" 500 105827
+ERROR 2025-10-01 09:31:17,011 views 14076 29604 Download page error for job cf6cdb97-f7c4-4083-b6fc-a4433b7134db: converter/download.html
+INFO 2025-10-01 09:31:17,074 basehttp 14076 29604 "GET /download-page/cf6cdb97-f7c4-4083-b6fc-a4433b7134db/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:31:25,630 basehttp 14076 31160 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:31:30,639 views 14076 31160 Created conversion job ef7fd93d-e751-4144-b760-53e03117d23b for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:31:30,647 views 14076 31160 Saved file to uploads/ef7fd93d-e751-4144-b760-53e03117d23b_eb8bf108.jpg
+INFO 2025-10-01 09:31:30,985 views 14076 31160 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\ef7fd93d-e751-4144-b760-53e03117d23b_converted.pdf
+INFO 2025-10-01 09:31:31,000 views 14076 31160 Conversion completed for job ef7fd93d-e751-4144-b760-53e03117d23b
+INFO 2025-10-01 09:31:31,005 basehttp 14076 31160 "POST /upload/ HTTP/1.1" 200 267
+ERROR 2025-10-01 09:31:32,067 views 14076 11672 Download page error for job ef7fd93d-e751-4144-b760-53e03117d23b: converter/download.html
+INFO 2025-10-01 09:31:32,069 basehttp 14076 11672 "GET /download-page/ef7fd93d-e751-4144-b760-53e03117d23b/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:32:13,457 autoreload 14076 31536 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 09:32:14,212 autoreload 892 23664 Watching for file changes with StatReloader
+ERROR 2025-10-01 09:32:17,374 views 892 22868 Download page error for job ef7fd93d-e751-4144-b760-53e03117d23b: converter/download.html
+INFO 2025-10-01 09:32:17,405 basehttp 892 22868 "GET /download-page/ef7fd93d-e751-4144-b760-53e03117d23b/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:32:18,938 basehttp 892 22868 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:32:24,775 views 892 23380 Created conversion job 8b38948e-a6d3-41d9-a5ed-54efbf37192e for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:32:24,778 views 892 23380 Saved file to uploads/8b38948e-a6d3-41d9-a5ed-54efbf37192e_ed5920be.jpg
+INFO 2025-10-01 09:32:25,044 views 892 23380 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\8b38948e-a6d3-41d9-a5ed-54efbf37192e_converted.pdf
+INFO 2025-10-01 09:32:25,061 views 892 23380 Conversion completed for job 8b38948e-a6d3-41d9-a5ed-54efbf37192e
+INFO 2025-10-01 09:32:25,061 basehttp 892 23380 "POST /upload/ HTTP/1.1" 200 339
+ERROR 2025-10-01 09:32:26,136 views 892 23380 Download page error for job 8b38948e-a6d3-41d9-a5ed-54efbf37192e: converter/download.html
+INFO 2025-10-01 09:32:26,146 basehttp 892 23380 "GET /download-page/8b38948e-a6d3-41d9-a5ed-54efbf37192e/ HTTP/1.1" 200 27833
+ERROR 2025-10-01 09:35:30,861 views 892 29572 Download page error for job 8b38948e-a6d3-41d9-a5ed-54efbf37192e: converter/download.html
+INFO 2025-10-01 09:35:30,871 basehttp 892 29572 "GET /download-page/8b38948e-a6d3-41d9-a5ed-54efbf37192e/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:35:32,431 basehttp 892 20816 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:35:37,486 views 892 20816 Created conversion job a250145d-f09d-4af7-b45b-1165486c7e49 for file compressed_WordtoPD.jpeg
+INFO 2025-10-01 09:35:37,508 views 892 20816 Saved file to uploads/a250145d-f09d-4af7-b45b-1165486c7e49_5d87397e.jpeg
+INFO 2025-10-01 09:35:37,852 views 892 20816 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\a250145d-f09d-4af7-b45b-1165486c7e49_converted.pdf
+INFO 2025-10-01 09:35:37,869 views 892 20816 Conversion completed for job a250145d-f09d-4af7-b45b-1165486c7e49
+INFO 2025-10-01 09:35:37,869 basehttp 892 20816 "POST /upload/ HTTP/1.1" 200 331
+ERROR 2025-10-01 09:35:38,920 views 892 20816 Download page error for job a250145d-f09d-4af7-b45b-1165486c7e49: converter/download.html
+INFO 2025-10-01 09:35:38,944 basehttp 892 20816 "GET /download-page/a250145d-f09d-4af7-b45b-1165486c7e49/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:35:43,292 basehttp 892 13072 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:36:16,688 autoreload 11212 22480 Watching for file changes with StatReloader
+INFO 2025-10-01 09:36:21,948 basehttp 11212 11048 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:36:26,871 views 11212 4596 Created conversion job f4540245-af88-4793-8e64-dd3ceab95032 for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:36:26,876 views 11212 4596 Saved file to uploads/f4540245-af88-4793-8e64-dd3ceab95032_eae0cfa4.jpg
+INFO 2025-10-01 09:36:27,258 views 11212 4596 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\f4540245-af88-4793-8e64-dd3ceab95032_converted.pdf
+INFO 2025-10-01 09:36:27,274 views 11212 4596 Conversion completed for job f4540245-af88-4793-8e64-dd3ceab95032
+INFO 2025-10-01 09:36:27,275 basehttp 11212 4596 "POST /upload/ HTTP/1.1" 200 339
+ERROR 2025-10-01 09:36:28,352 views 11212 4596 Download page error for job f4540245-af88-4793-8e64-dd3ceab95032: converter/download.html
+INFO 2025-10-01 09:36:28,362 basehttp 11212 4596 "GET /download-page/f4540245-af88-4793-8e64-dd3ceab95032/ HTTP/1.1" 200 27833
+INFO 2025-10-01 09:37:22,315 basehttp 11212 3564 "GET /download-page/f4540245-af88-4793-8e64-dd3ceab95032/ HTTP/1.1" 200 33982
+INFO 2025-10-01 09:37:22,653 views 11212 3564 File f4540245-af88-4793-8e64-dd3ceab95032_converted.pdf downloaded successfully
+INFO 2025-10-01 09:37:22,654 basehttp 11212 3564 "HEAD /download/f4540245-af88-4793-8e64-dd3ceab95032/ HTTP/1.1" 200 0
+INFO 2025-10-01 09:37:27,017 views 11212 3564 File f4540245-af88-4793-8e64-dd3ceab95032_converted.pdf downloaded successfully
+INFO 2025-10-01 09:37:27,020 basehttp 11212 3564 "GET /download/f4540245-af88-4793-8e64-dd3ceab95032/ HTTP/1.1" 200 228684
+INFO 2025-10-01 09:37:32,739 basehttp 11212 29084 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:39:39,931 basehttp 11212 1316 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 09:39:45,322 views 11212 26648 Created conversion job 5be06563-e27e-4397-a358-09e3497a3e89 for file Screenshot 2025-09-30 234534.jpg
+INFO 2025-10-01 09:39:45,333 views 11212 26648 Saved file to uploads/5be06563-e27e-4397-a358-09e3497a3e89_db79b85e.jpg
+INFO 2025-10-01 09:39:45,570 views 11212 26648 Successfully converted image to PDF: C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\media\converted\5be06563-e27e-4397-a358-09e3497a3e89_converted.pdf
+INFO 2025-10-01 09:39:45,593 views 11212 26648 Conversion completed for job 5be06563-e27e-4397-a358-09e3497a3e89
+INFO 2025-10-01 09:39:45,604 basehttp 11212 26648 "POST /upload/ HTTP/1.1" 200 339
+INFO 2025-10-01 09:39:47,807 basehttp 11212 26648 "GET /download-page/5be06563-e27e-4397-a358-09e3497a3e89/ HTTP/1.1" 200 32311
+INFO 2025-10-01 09:39:47,985 views 11212 26648 File 5be06563-e27e-4397-a358-09e3497a3e89_converted.pdf downloaded successfully
+INFO 2025-10-01 09:39:47,985 basehttp 11212 26648 "HEAD /download/5be06563-e27e-4397-a358-09e3497a3e89/ HTTP/1.1" 200 0
+INFO 2025-10-01 09:39:59,214 views 11212 27980 File 5be06563-e27e-4397-a358-09e3497a3e89_converted.pdf downloaded successfully
+INFO 2025-10-01 09:39:59,217 basehttp 11212 27980 "GET /download/5be06563-e27e-4397-a358-09e3497a3e89/ HTTP/1.1" 200 228684
+INFO 2025-10-01 09:40:04,364 basehttp 11212 5604 "GET / HTTP/1.1" 200 61180
+INFO 2025-10-01 13:01:01,662 autoreload 11212 22480 C:\Users\manik\OneDrive\Desktop\pdf_to_jpg2\file_converter\converter\views.py changed, reloading.
+INFO 2025-10-01 13:01:03,092 autoreload 7576 28956 Watching for file changes with StatReloader
+INFO 2025-10-01 13:10:12,640 basehttp 7576 28520 "GET / HTTP/1.1" 200 55124
+INFO 2025-10-01 13:14:14,582 basehttp 7576 25860 "GET / HTTP/1.1" 200 55202
+INFO 2025-10-01 13:19:19,790 basehttp 7576 28552 "GET / HTTP/1.1" 200 55471

@@ -10,6 +10,7 @@ urlpatterns = [
     path('upload/', views.upload_file, name='upload_file'),
     path('download/<uuid:job_id>/', views.download_file, name='download_file'),
     path('status/<uuid:job_id>/', views.job_status, name='job_status'),
+    path('download-page/<uuid:job_id>/', views.download_page, name='download_page'),
 
     # Static pages
     path('privacy-policy/', views.privacy_policy, name='privacy_policy'),

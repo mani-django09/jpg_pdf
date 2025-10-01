@@ -1,4 +1,4 @@
-# robots.txt for jpg2pdf.at
+# robots.txt for jpg2pdf.link
 # JPG to PDF Converter Website
 
 User-agent: *
@@ -63,7 +63,7 @@ Disallow: /.env
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://jpg2pdf.at/sitemap.xml
+Sitemap: https://jpg2pdf.link/sitemap.xml
 
 # Crawl delay for polite crawling
 Crawl-delay: 1
