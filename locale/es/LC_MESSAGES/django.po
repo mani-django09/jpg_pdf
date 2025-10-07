@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-06 22:49+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\converter\templates\base.html:9
+msgid "Free JPG to PDF Converter | Convert Images to PDF Instantly"
+msgstr ""
+"Convertidor Gratuito de JPG a PDF | Convierte Imágenes a PDF al Instante"
+
+#: .\converter\templates\base.html:10
+msgid "Free JPG to PDF Converter | Professional Image to PDF Tool"
+msgstr "Convertidor Gratuito de JPG a PDF | Herramienta Profesional"
+
+#: .\converter\templates\base.html:11
+msgid ""
+"Transform JPG, PNG, and other images into professional PDF documents "
+"instantly. Free online converter with no registration, unlimited "
+"conversions, and perfect quality preservation."
+msgstr ""
+"Transforma JPG, PNG y otras imágenes en documentos PDF profesionales al "
+"instante. Convertidor en línea gratuito sin registro, conversiones "
+"ilimitadas y preservación perfecta de la calidad."
+
+#: .\converter\templates\base.html:217
+msgid "Home"
+msgstr "Inicio"
+
+#: .\converter\templates\base.html:218
+msgid "Features"
+msgstr "Características"
+
+#: .\converter\templates\base.html:219
+msgid "FAQ"
+msgstr "Preguntas Frecuentes"
+
+#: .\converter\templates\base.html:220
+msgid "Contact"
+msgstr "Contacto"
+
+#: .\converter\templates\base.html:241
+msgid "About jpg2pdf.link"
+msgstr "Acerca de jpg2pdf.link"
+
+#: .\converter\templates\base.html:242
+msgid "Professional image to PDF conversion tool. Free, fast, and secure."
+msgstr ""
+"Herramienta profesional de conversión de imagen a PDF. Gratuita, rápida y "
+"segura."
+
+#: .\converter\templates\base.html:245
+msgid "Quick Links"
+msgstr "Enlaces Rápidos"
+
+#: .\converter\templates\base.html:246
+msgid "JPG to PDF Converter"
+msgstr "Convertidor de JPG a PDF"
+
+#: .\converter\templates\base.html:247
+msgid "Privacy Policy"
+msgstr "Política de Privacidad"
+
+#: .\converter\templates\base.html:248
+msgid "Terms of Service"
+msgstr "Términos de Servicio"
+
+#: .\converter\templates\base.html:252
+msgid "All rights reserved"
+msgstr "Todos los derechos reservados"
+
+#: .\converter\templates\converter\home.html:4
+msgid "Free JPG to PDF Converter - Convert Images Online"
+msgstr "Convertidor Gratuito de JPG a PDF - Convierte Imágenes en Línea"
+
+#: .\converter\templates\converter\home.html:5
+msgid ""
+"Turn your JPG and PNG images into PDF files. Free tool, no signup needed. "
+"Works on phone and computer."
+msgstr ""
+"Convierte tus imágenes JPG y PNG en archivos PDF. Herramienta gratuita, sin "
+"necesidad de registro. Funciona en teléfono y computadora."
+
+#: .\converter\templates\converter\home.html:488
+msgid "Turn JPG Images into PDF Files"
+msgstr "Convierte Imágenes JPG en Archivos PDF"
+
+#: .\converter\templates\converter\home.html:489
+msgid ""
+"Free converter that works in your browser. No signup, no software to install."
+msgstr ""
+"Convertidor gratuito que funciona en tu navegador. Sin registro, sin "
+"software para instalar."
+
+#: .\converter\templates\converter\home.html:498
+msgid "Drop your images here"
+msgstr "Suelta tus imágenes aquí"
+
+#: .\converter\templates\converter\home.html:499
+msgid "or click to browse files"
+msgstr "o haz clic para buscar archivos"
+
+#: .\converter\templates\converter\home.html:501
+msgid "Select Images"
+msgstr "Seleccionar Imágenes"
+
+#: .\converter\templates\converter\home.html:507
+#: .\converter\templates\converter\home.html:551
+msgid "Private"
+msgstr "Privado"
+
+#: .\converter\templates\converter\home.html:507
+msgid "Files deleted after 24 hours"
+msgstr "Archivos eliminados después de 24 horas"
+
+#: .\converter\templates\converter\home.html:512
+#: .\converter\templates\converter\home.html:761
+msgid "files"
+msgstr "archivos"
+
+#: .\converter\templates\converter\home.html:515
+msgid "Add more"
+msgstr "Agregar más"
+
+#: .\converter\templates\converter\home.html:518
+msgid "Clear"
+msgstr "Limpiar"
+
+#: .\converter\templates\converter\home.html:525
+#: .\converter\templates\converter\home.html:893
+msgid "Convert to PDF"
+msgstr "Convertir a PDF"
+
+#: .\converter\templates\converter\home.html:532
+msgid "Why I Built This"
+msgstr "Por Qué Construí Esto"
+
+#: .\converter\templates\converter\home.html:533
+msgid ""
+"I got tired of downloading random software just to convert a couple photos "
+"to PDF. You know the routine - you need to submit something for work or "
+"school, and suddenly you're installing programs that want permissions for "
+"everything on your computer."
+msgstr ""
+"Me cansé de descargar software aleatorio solo para convertir un par de fotos "
+"a PDF. Conoces la rutina: necesitas enviar algo para el trabajo o la "
+"escuela, y de repente estás instalando programas que quieren permisos para "
+"todo en tu computadora."
+
+#: .\converter\templates\converter\home.html:535
+msgid ""
+"This tool does one thing: takes your images and puts them in a PDF. No "
+"account signup, no email collection, no upsells for premium features. I make "
+"enough from a few ads to keep the servers running."
+msgstr ""
+"Esta herramienta hace una cosa: toma tus imágenes y las pone en un PDF. Sin "
+"registro de cuenta, sin recopilación de correo electrónico, sin ventas "
+"adicionales de funciones premium. Gano lo suficiente con algunos anuncios "
+"para mantener los servidores funcionando."
+
+#: .\converter\templates\converter\home.html:537
+msgid "It's Actually Fast"
+msgstr "Es Realmente Rápido"
+
+#: .\converter\templates\converter\home.html:538
+msgid ""
+"Most converters are slow because they're handling hundreds of people on "
+"cheap servers. I've waited 10 minutes before for a simple conversion - "
+"that's ridiculous. This usually takes under 5 seconds. If it's slower, "
+"something's probably wrong."
+msgstr ""
+"La mayoría de los convertidores son lentos porque manejan cientos de "
+"personas en servidores baratos. He esperado 10 minutos antes para una "
+"conversión simple - eso es ridículo. Esto generalmente toma menos de 5 "
+"segundos. Si es más lento, probablemente algo anda mal."
+
+#: .\converter\templates\converter\home.html:540
+msgid "Your Images Won't Look Worse"
+msgstr "Tus Imágenes No Se Verán Peor"
+
+#: .\converter\templates\converter\home.html:541
+msgid ""
+"Some sites compress your images to save money on storage. You upload a clear "
+"photo and get back a blurry mess. I don't do that. Your image goes in, gets "
+"wrapped in PDF format, comes out looking identical."
+msgstr ""
+"Algunos sitios comprimen tus imágenes para ahorrar dinero en almacenamiento. "
+"Subes una foto clara y recibes un desastre borroso. Yo no hago eso. Tu "
+"imagen entra, se envuelve en formato PDF, sale con aspecto idéntico."
+
+#: .\converter\templates\converter\home.html:545
+msgid "What You're Getting"
+msgstr "Lo Que Obtienes"
+
+#: .\converter\templates\converter\home.html:552
+msgid ""
+"Files upload through encryption and get deleted after 24 hours. I can't see "
+"what you're converting."
+msgstr ""
+"Los archivos se cargan mediante encriptación y se eliminan después de 24 "
+"horas. No puedo ver lo que estás convirtiendo."
+
+#: .\converter\templates\converter\home.html:558
+msgid "No Limits"
+msgstr "Sin Límites"
+
+#: .\converter\templates\converter\home.html:559
+msgid "Convert 5 files or 500. There's no daily cap or paywall."
+msgstr "Convierte 5 archivos o 500. No hay límite diario ni muro de pago."
+
+#: .\converter\templates\converter\home.html:565
+msgid "Works Anywhere"
+msgstr "Funciona En Cualquier Lugar"
+
+#: .\converter\templates\converter\home.html:566
+msgid "Phone, tablet, computer - doesn't matter. It's just a website."
+msgstr "Teléfono, tableta, computadora - no importa. Es solo un sitio web."
+
+#: .\converter\templates\converter\home.html:572
+msgid "Quick"
+msgstr "Rápido"
+
+#: .\converter\templates\converter\home.html:573
+msgid "Usually done in under 5 seconds. The servers are optimized for speed."
+msgstr ""
+"Generalmente se hace en menos de 5 segundos. Los servidores están "
+"optimizados para velocidad."
+
+#: .\converter\templates\converter\home.html:579
+msgid "Different Formats"
+msgstr "Diferentes Formatos"
+
+#: .\converter\templates\converter\home.html:580
+msgid "JPG, PNG, GIF, BMP, WebP - they all work."
+msgstr "JPG, PNG, GIF, BMP, WebP - todos funcionan."
+
+#: .\converter\templates\converter\home.html:586
+msgid "No Signup"
+msgstr "Sin Registro"
+
+#: .\converter\templates\converter\home.html:587
+msgid "Just use it. No account, no email, no password."
+msgstr "Solo úsalo. Sin cuenta, sin correo electrónico, sin contraseña."
+
+#: .\converter\templates\converter\home.html:593
+msgid "How to Use This"
+msgstr "Cómo Usar Esto"
+
+#: .\converter\templates\converter\home.html:598
+msgid "Pick Your Images"
+msgstr "Elige Tus Imágenes"
+
+#: .\converter\templates\converter\home.html:599
+msgid ""
+"Click the upload box or drag files from your desktop. You can select "
+"multiple at once - hold Ctrl (Windows) or Command (Mac) while clicking. "
+"Works with JPG, PNG, GIF, BMP, and WebP. Max 2GB per file."
+msgstr ""
+"Haz clic en la caja de carga o arrastra archivos desde tu escritorio. Puedes "
+"seleccionar varios a la vez: mantén presionado Ctrl (Windows) o Command "
+"(Mac) mientras haces clic. Funciona con JPG, PNG, GIF, BMP y WebP. Máximo "
+"2GB por archivo."
+
+#: .\converter\templates\converter\home.html:605
+msgid "Check Your Files"
+msgstr "Verifica Tus Archivos"
+
+#: .\converter\templates\converter\home.html:606
+msgid ""
+"You'll see thumbnails of everything you uploaded. They'll appear in your PDF "
+"in this same order. Remove any mistakes by clicking the X, or add more files "
+"if you forgot something."
+msgstr ""
+"Verás miniaturas de todo lo que subiste. Aparecerán en tu PDF en este mismo "
+"orden. Elimina cualquier error haciendo clic en la X, o agrega más archivos "
+"si olvidaste algo."
+
+#: .\converter\templates\converter\home.html:612
+msgid "Download the PDF"
+msgstr "Descargar el PDF"
+
+#: .\converter\templates\converter\home.html:613
+msgid ""
+"Hit convert and wait a couple seconds. You'll go to a download page where "
+"you can grab your PDF. The file stays available for 24 hours if you need it "
+"again."
+msgstr ""
+"Haz clic en convertir y espera un par de segundos. Irás a una página de "
+"descarga donde puedes obtener tu PDF. El archivo permanece disponible "
+"durante 24 horas si lo necesitas de nuevo."
+
+#: .\converter\templates\converter\home.html:620
+msgid "Common Questions"
+msgstr "Preguntas Comunes"
+
+#: .\converter\templates\converter\home.html:624
+msgid "How long does the JPG to PDF conversion process actually take?"
+msgstr "¿Cuánto tiempo realmente toma el proceso de conversión de JPG a PDF?"
+
+#: .\converter\templates\converter\home.html:627
+msgid ""
+"Usually 2-5 seconds per image. Ten photos takes about 20-30 seconds total. "
+"Huge files or slow internet might add some time, but it's rare for anything "
+"to take over a minute."
+msgstr ""
+"Generalmente 2-5 segundos por imagen. Diez fotos toman alrededor de 20-30 "
+"segundos en total. Archivos enormes o internet lenta pueden agregar algo de "
+"tiempo, pero es raro que algo tome más de un minuto."
+
+#: .\converter\templates\converter\home.html:632
+msgid "Is there a limit on how many files I can convert per day or month?"
+msgstr "¿Hay un límite en cuántos archivos puedo convertir por día o mes?"
+
+#: .\converter\templates\converter\home.html:635
+msgid ""
+"Nope. Use it as much as you want. I've seen people convert thousands of "
+"files over several months. No daily caps, no monthly quotas, no paid "
+"upgrades."
+msgstr ""
+"No. Úsalo tanto como quieras. He visto a personas convertir miles de "
+"archivos durante varios meses. Sin límites diarios, sin cuotas mensuales, "
+"sin actualizaciones pagadas."
+
+#: .\converter\templates\converter\home.html:640
+msgid "Can I convert multiple JPG images into a single PDF file?"
+msgstr "¿Puedo convertir múltiples imágenes JPG en un solo archivo PDF?"
+
+#: .\converter\templates\converter\home.html:643
+msgid ""
+"Yes! You can select multiple JPG images at once, and they will all be "
+"combined into a single PDF document. The images will appear in the order you "
+"selected them. This is perfect for creating multi-page documents from "
+"scanned images or photo collections."
+msgstr "¡Sí! Puedes seleccionar múltiples imágenes JPG a la vez, y todas se combinarán en un solo documento PDF. Las imágenes aparecerán en el orden en que las seleccionaste. Esto es perfecto para crear documentos de varias páginas a partir de imágenes escaneadas o colecciones de fotos."
+
+#: .\converter\templates\converter\home.html:649
+msgid "Do I need to install any software to use this JPG to PDF converter?"
+msgstr "¿Necesito instalar algún software para usar este convertidor de JPG a PDF?"
+
+#: .\converter\templates\converter\home.html:652
+msgid ""
+"No installation needed! This is a web-based tool that works directly in your "
+"browser. It's compatible with Chrome, Firefox, Safari, Edge, and all modern "
+"browsers on Windows, Mac, Linux, Android, and iOS. Just visit the website "
+"and start converting."
+msgstr "¡No se necesita instalación! Esta es una herramienta basada en web que funciona directamente en tu navegador. Es compatible con Chrome, Firefox, Safari, Edge y todos los navegadores modernos en Windows, Mac, Linux, Android e iOS. Simplemente visita el sitio web y comienza a convertir."
+
+#: .\converter\templates\converter\home.html:657
+msgid "What happens to my files after I upload them to your server?"
+msgstr "¿Qué sucede con mis archivos después de subirlos a tu servidor?"
+
+#: .\converter\templates\converter\home.html:660
+msgid ""
+"You upload through encryption, I convert them to PDF, you download it. The "
+"files sit on my server for 24 hours in case you need them again, then "
+"they're automatically deleted. No backups, no archives."
+msgstr ""
+"Subes mediante encriptación, los convierto a PDF, los descargas. Los "
+"archivos permanecen en mi servidor durante 24 horas en caso de que los "
+"necesites nuevamente, luego se eliminan automáticamente. Sin copias de "
+"seguridad, sin archivos."
+
+#: .\converter\templates\converter\home.html:853
+msgid "Converting..."
+msgstr "Convirtiendo..."
+
+#: .\file_converter\settings.py:115
+msgid "English"
+msgstr "Inglés"
+
+#: .\file_converter\settings.py:116
+msgid "Portuguese"
+msgstr "Portugués"
+
+#: .\file_converter\settings.py:117
+msgid "Spanish"
+msgstr "Español"
+
+#: .\file_converter\settings.py:118
+msgid "German"
+msgstr "Alemán"
+
+#: .\file_converter\settings.py:119
+msgid "Indonesian"
+msgstr "Indonesio"
+
+#: .\file_converter\settings.py:120
+msgid "French"
+msgstr "Francés"
+
+#: .\file_converter\settings.py:121
+msgid "Turkish"
+msgstr "Turco"

@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-06 22:49+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\converter\templates\base.html:9
+msgid "Free JPG to PDF Converter | Convert Images to PDF Instantly"
+msgstr "Konverter JPG ke PDF Gratis | Konversi Gambar ke PDF Secara Instan"
+
+#: .\converter\templates\base.html:10
+msgid "Free JPG to PDF Converter | Professional Image to PDF Tool"
+msgstr "Konverter JPG ke PDF Gratis | Alat Profesional"
+
+#: .\converter\templates\base.html:11
+msgid ""
+"Transform JPG, PNG, and other images into professional PDF documents "
+"instantly. Free online converter with no registration, unlimited "
+"conversions, and perfect quality preservation."
+msgstr ""
+"Ubah JPG, PNG, dan gambar lainnya menjadi dokumen PDF profesional secara "
+"instan. Konverter online gratis tanpa registrasi, konversi tanpa batas, dan "
+"preservasi kualitas sempurna."
+
+#: .\converter\templates\base.html:217
+msgid "Home"
+msgstr "Beranda"
+
+#: .\converter\templates\base.html:218
+msgid "Features"
+msgstr "Fitur"
+
+#: .\converter\templates\base.html:219
+msgid "FAQ"
+msgstr "Pertanyaan Umum"
+
+#: .\converter\templates\base.html:220
+msgid "Contact"
+msgstr "Kontak"
+
+#: .\converter\templates\base.html:241
+msgid "About jpg2pdf.link"
+msgstr "Tentang jpg2pdf.link"
+
+#: .\converter\templates\base.html:242
+msgid "Professional image to PDF conversion tool. Free, fast, and secure."
+msgstr "Alat konversi gambar ke PDF profesional. Gratis, cepat, dan aman."
+
+#: .\converter\templates\base.html:245
+msgid "Quick Links"
+msgstr "Tautan Cepat"
+
+#: .\converter\templates\base.html:246
+msgid "JPG to PDF Converter"
+msgstr "Konverter JPG ke PDF"
+
+#: .\converter\templates\base.html:247
+msgid "Privacy Policy"
+msgstr "Kebijakan Privasi"
+
+#: .\converter\templates\base.html:248
+msgid "Terms of Service"
+msgstr "Ketentuan Layanan"
+
+#: .\converter\templates\base.html:252
+msgid "All rights reserved"
+msgstr "Hak cipta dilindungi"
+
+#: .\converter\templates\converter\home.html:4
+msgid "Free JPG to PDF Converter - Convert Images Online"
+msgstr "Konverter JPG ke PDF Gratis - Konversi Gambar Online"
+
+#: .\converter\templates\converter\home.html:5
+msgid ""
+"Turn your JPG and PNG images into PDF files. Free tool, no signup needed. "
+"Works on phone and computer."
+msgstr ""
+"Ubah gambar JPG dan PNG Anda menjadi file PDF. Alat gratis, tidak perlu "
+"pendaftaran. Bekerja di ponsel dan komputer."
+
+#: .\converter\templates\converter\home.html:488
+msgid "Turn JPG Images into PDF Files"
+msgstr "Ubah Gambar JPG menjadi File PDF"
+
+#: .\converter\templates\converter\home.html:489
+msgid ""
+"Free converter that works in your browser. No signup, no software to install."
+msgstr ""
+"Konverter gratis yang bekerja di browser Anda. Tanpa pendaftaran, tanpa "
+"software untuk diinstal."
+
+#: .\converter\templates\converter\home.html:498
+msgid "Drop your images here"
+msgstr "Jatuhkan gambar Anda di sini"
+
+#: .\converter\templates\converter\home.html:499
+msgid "or click to browse files"
+msgstr "atau klik untuk menjelajah file"
+
+#: .\converter\templates\converter\home.html:501
+msgid "Select Images"
+msgstr "Pilih Gambar"
+
+#: .\converter\templates\converter\home.html:507
+#: .\converter\templates\converter\home.html:551
+msgid "Private"
+msgstr "Pribadi"
+
+#: .\converter\templates\converter\home.html:507
+msgid "Files deleted after 24 hours"
+msgstr "File dihapus setelah 24 jam"
+
+#: .\converter\templates\converter\home.html:512
+#: .\converter\templates\converter\home.html:761
+msgid "files"
+msgstr "file"
+
+#: .\converter\templates\converter\home.html:515
+msgid "Add more"
+msgstr "Tambah lagi"
+
+#: .\converter\templates\converter\home.html:518
+msgid "Clear"
+msgstr "Hapus"
+
+#: .\converter\templates\converter\home.html:525
+#: .\converter\templates\converter\home.html:893
+msgid "Convert to PDF"
+msgstr "Konversi ke PDF"
+
+#: .\converter\templates\converter\home.html:532
+msgid "Why I Built This"
+msgstr "Mengapa Saya Membuatnya"
+
+#: .\converter\templates\converter\home.html:533
+msgid ""
+"I got tired of downloading random software just to convert a couple photos "
+"to PDF. You know the routine - you need to submit something for work or "
+"school, and suddenly you're installing programs that want permissions for "
+"everything on your computer."
+msgstr ""
+"Saya bosan mengunduh software acak hanya untuk mengonversi beberapa foto ke "
+"PDF. Anda tahu rutinitasnya - Anda perlu mengirimkan sesuatu untuk pekerjaan "
+"atau sekolah, dan tiba-tiba Anda menginstal program yang menginginkan izin "
+"untuk semua hal di komputer Anda."
+
+#: .\converter\templates\converter\home.html:535
+msgid ""
+"This tool does one thing: takes your images and puts them in a PDF. No "
+"account signup, no email collection, no upsells for premium features. I make "
+"enough from a few ads to keep the servers running."
+msgstr ""
+"Alat ini melakukan satu hal: mengambil gambar Anda dan memasukkannya ke "
+"dalam PDF. Tanpa pendaftaran akun, tanpa pengumpulan email, tanpa penawaran "
+"fitur premium. Saya menghasilkan cukup dari beberapa iklan untuk menjaga "
+"server tetap berjalan."
+
+#: .\converter\templates\converter\home.html:537
+msgid "It's Actually Fast"
+msgstr "Ini Benar-Benar Cepat"
+
+#: .\converter\templates\converter\home.html:538
+msgid ""
+"Most converters are slow because they're handling hundreds of people on "
+"cheap servers. I've waited 10 minutes before for a simple conversion - "
+"that's ridiculous. This usually takes under 5 seconds. If it's slower, "
+"something's probably wrong."
+msgstr ""
+"Sebagian besar konverter lambat karena mereka menangani ratusan orang di "
+"server murah. Saya pernah menunggu 10 menit sebelumnya untuk konversi "
+"sederhana - itu konyol. Ini biasanya memakan waktu kurang dari 5 detik. Jika "
+"lebih lambat, mungkin ada yang salah."
+
+#: .\converter\templates\converter\home.html:540
+msgid "Your Images Won't Look Worse"
+msgstr "Gambar Anda Tidak Akan Terlihat Lebih Buruk"
+
+#: .\converter\templates\converter\home.html:541
+msgid ""
+"Some sites compress your images to save money on storage. You upload a clear "
+"photo and get back a blurry mess. I don't do that. Your image goes in, gets "
+"wrapped in PDF format, comes out looking identical."
+msgstr ""
+"Beberapa situs mengompresi gambar Anda untuk menghemat uang penyimpanan. "
+"Anda mengunggah foto yang jelas dan mendapatkan kembali hasil yang buram. "
+"Saya tidak melakukan itu. Gambar Anda masuk, dibungkus dalam format PDF, "
+"keluar terlihat identik."
+
+#: .\converter\templates\converter\home.html:545
+msgid "What You're Getting"
+msgstr "Apa Yang Anda Dapatkan"
+
+#: .\converter\templates\converter\home.html:552
+msgid ""
+"Files upload through encryption and get deleted after 24 hours. I can't see "
+"what you're converting."
+msgstr ""
+"File diunggah melalui enkripsi dan dihapus setelah 24 jam. Saya tidak bisa "
+"melihat apa yang Anda konversi."
+
+#: .\converter\templates\converter\home.html:558
+msgid "No Limits"
+msgstr "Tanpa Batas"
+
+#: .\converter\templates\converter\home.html:559
+msgid "Convert 5 files or 500. There's no daily cap or paywall."
+msgstr "Konversi 5 file atau 500. Tidak ada batas harian atau paywall."
+
+#: .\converter\templates\converter\home.html:565
+msgid "Works Anywhere"
+msgstr "Bekerja Di Mana Saja"
+
+#: .\converter\templates\converter\home.html:566
+msgid "Phone, tablet, computer - doesn't matter. It's just a website."
+msgstr "Ponsel, tablet, komputer - tidak masalah. Ini hanya website."
+
+#: .\converter\templates\converter\home.html:572
+msgid "Quick"
+msgstr "Cepat"
+
+#: .\converter\templates\converter\home.html:573
+msgid "Usually done in under 5 seconds. The servers are optimized for speed."
+msgstr ""
+"Biasanya selesai dalam waktu kurang dari 5 detik. Server dioptimalkan untuk "
+"kecepatan."
+
+#: .\converter\templates\converter\home.html:579
+msgid "Different Formats"
+msgstr "Format Berbeda"
+
+#: .\converter\templates\converter\home.html:580
+msgid "JPG, PNG, GIF, BMP, WebP - they all work."
+msgstr "JPG, PNG, GIF, BMP, WebP - semuanya bekerja."
+
+#: .\converter\templates\converter\home.html:586
+msgid "No Signup"
+msgstr "Tanpa Pendaftaran"
+
+#: .\converter\templates\converter\home.html:587
+msgid "Just use it. No account, no email, no password."
+msgstr "Gunakan saja. Tanpa akun, tanpa email, tanpa kata sandi."
+
+#: .\converter\templates\converter\home.html:593
+msgid "How to Use This"
+msgstr "Cara Menggunakan Ini"
+
+#: .\converter\templates\converter\home.html:598
+msgid "Pick Your Images"
+msgstr "Pilih Gambar Anda"
+
+#: .\converter\templates\converter\home.html:599
+msgid ""
+"Click the upload box or drag files from your desktop. You can select "
+"multiple at once - hold Ctrl (Windows) or Command (Mac) while clicking. "
+"Works with JPG, PNG, GIF, BMP, and WebP. Max 2GB per file."
+msgstr ""
+"Klik kotak unggah atau seret file dari desktop Anda. Anda dapat memilih "
+"beberapa sekaligus - tahan Ctrl (Windows) atau Command (Mac) saat mengklik. "
+"Bekerja dengan JPG, PNG, GIF, BMP, dan WebP. Maksimal 2GB per file."
+
+#: .\converter\templates\converter\home.html:605
+msgid "Check Your Files"
+msgstr "Periksa File Anda"
+
+#: .\converter\templates\converter\home.html:606
+msgid ""
+"You'll see thumbnails of everything you uploaded. They'll appear in your PDF "
+"in this same order. Remove any mistakes by clicking the X, or add more files "
+"if you forgot something."
+msgstr ""
+"Anda akan melihat thumbnail dari semua yang Anda unggah. Mereka akan muncul "
+"di PDF Anda dalam urutan yang sama. Hapus kesalahan dengan mengklik X, atau "
+"tambahkan lebih banyak file jika Anda lupa sesuatu."
+
+#: .\converter\templates\converter\home.html:612
+msgid "Download the PDF"
+msgstr "Unduh PDF"
+
+#: .\converter\templates\converter\home.html:613
+msgid ""
+"Hit convert and wait a couple seconds. You'll go to a download page where "
+"you can grab your PDF. The file stays available for 24 hours if you need it "
+"again."
+msgstr ""
+"Tekan konversi dan tunggu beberapa detik. Anda akan pergi ke halaman unduh "
+"di mana Anda bisa mengambil PDF Anda. File tetap tersedia selama 24 jam jika "
+"Anda membutuhkannya lagi."
+
+#: .\converter\templates\converter\home.html:620
+msgid "Common Questions"
+msgstr "Pertanyaan Umum"
+
+#: .\converter\templates\converter\home.html:624
+msgid "How long does the JPG to PDF conversion process actually take?"
+msgstr "Berapa lama proses konversi JPG ke PDF sebenarnya memakan waktu?"
+
+#: .\converter\templates\converter\home.html:627
+msgid ""
+"Usually 2-5 seconds per image. Ten photos takes about 20-30 seconds total. "
+"Huge files or slow internet might add some time, but it's rare for anything "
+"to take over a minute."
+msgstr ""
+"Biasanya 2-5 detik per gambar. Sepuluh foto memakan waktu sekitar 20-30 "
+"detik total. File besar atau internet lambat mungkin menambah waktu, tetapi "
+"jarang ada yang memakan waktu lebih dari satu menit."
+
+#: .\converter\templates\converter\home.html:632
+msgid "Is there a limit on how many files I can convert per day or month?"
+msgstr ""
+"Apakah ada batas berapa banyak file yang dapat saya konversi per hari atau "
+"bulan?"
+
+#: .\converter\templates\converter\home.html:635
+msgid ""
+"Nope. Use it as much as you want. I've seen people convert thousands of "
+"files over several months. No daily caps, no monthly quotas, no paid "
+"upgrades."
+msgstr ""
+"Tidak. Gunakan sebanyak yang Anda inginkan. Saya telah melihat orang "
+"mengonversi ribuan file selama beberapa bulan. Tanpa batas harian, tanpa "
+"kuota bulanan, tanpa upgrade berbayar."
+
+#: .\converter\templates\converter\home.html:640
+msgid "Can I convert multiple JPG images into a single PDF file?"
+msgstr "Bisakah saya mengonversi beberapa gambar JPG menjadi satu file PDF?"
+
+#: .\converter\templates\converter\home.html:643
+msgid ""
+"Yes! You can select multiple JPG images at once, and they will all be "
+"combined into a single PDF document. The images will appear in the order you "
+"selected them. This is perfect for creating multi-page documents from "
+"scanned images or photo collections."
+msgstr "Ya! Anda dapat memilih beberapa gambar JPG sekaligus, dan semuanya akan digabungkan menjadi satu dokumen PDF. Gambar akan muncul dalam urutan yang Anda pilih. Ini sempurna untuk membuat dokumen multi-halaman dari gambar yang dipindai atau koleksi foto."
+
+#: .\converter\templates\converter\home.html:649
+msgid "Do I need to install any software to use this JPG to PDF converter?"
+msgstr "Apakah saya perlu menginstal software untuk menggunakan konverter JPG ke PDF ini?"
+
+#: .\converter\templates\converter\home.html:652
+msgid ""
+"No installation needed! This is a web-based tool that works directly in your "
+"browser. It's compatible with Chrome, Firefox, Safari, Edge, and all modern "
+"browsers on Windows, Mac, Linux, Android, and iOS. Just visit the website "
+"and start converting."
+msgstr "Tidak perlu instalasi! Ini adalah alat berbasis web yang bekerja langsung di browser Anda. Ini kompatibel dengan Chrome, Firefox, Safari, Edge, dan semua browser modern di Windows, Mac, Linux, Android, dan iOS. Cukup kunjungi situs web dan mulai mengonversi."
+
+#: .\converter\templates\converter\home.html:657
+msgid "What happens to my files after I upload them to your server?"
+msgstr ""
+"Apa yang terjadi pada file saya setelah saya mengunggahnya ke server Anda?"
+
+#: .\converter\templates\converter\home.html:660
+msgid ""
+"You upload through encryption, I convert them to PDF, you download it. The "
+"files sit on my server for 24 hours in case you need them again, then "
+"they're automatically deleted. No backups, no archives."
+msgstr ""
+"Anda mengunggah melalui enkripsi, saya mengonversinya ke PDF, Anda "
+"mengunduhnya. File tetap di server saya selama 24 jam jika Anda "
+"membutuhkannya lagi, kemudian secara otomatis dihapus. Tanpa cadangan, tanpa "
+"arsip."
+
+#: .\converter\templates\converter\home.html:853
+msgid "Converting..."
+msgstr "Mengkonversi..."
+
+#: .\file_converter\settings.py:115
+msgid "English"
+msgstr "Inggris"
+
+#: .\file_converter\settings.py:116
+msgid "Portuguese"
+msgstr "Portugis"
+
+#: .\file_converter\settings.py:117
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: .\file_converter\settings.py:118
+msgid "German"
+msgstr "Jerman"
+
+#: .\file_converter\settings.py:119
+msgid "Indonesian"
+msgstr "Indonesia"
+
+#: .\file_converter\settings.py:120
+msgid "French"
+msgstr "Prancis"
+
+#: .\file_converter\settings.py:121
+msgid "Turkish"
+msgstr "Turki"

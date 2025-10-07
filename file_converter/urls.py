@@ -5,17 +5,21 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.sitemaps.views import sitemap
 from converter.sitemaps import sitemaps
+from django.conf.urls.i18n import i18n_patterns
 
+# Non-translated URLs (sitemap, language switcher)
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('converter.urls')),
-    
-    # Sitemap at root level for better SEO
+    path('i18n/', include('django.conf.urls.i18n')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, 
          name='django.contrib.sitemaps.views.sitemap'),
 ]
 
-
+# Translated URLs with language prefix
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+    path('', include('converter.urls')),
+    prefix_default_language=False  # Change to False to avoid /en/ prefix for English
+)
 
 # Serve media files in development
 if settings.DEBUG:

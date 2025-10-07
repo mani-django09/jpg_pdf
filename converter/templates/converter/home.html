@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
-{% block title %}Free JPG to PDF Converter - Convert Images Online{% endblock %}
-{% block meta_description %}Turn your JPG and PNG images into PDF files. Free tool, no signup needed. Works on phone and computer.{% endblock %}
+{% block title %}{% trans "Free JPG to PDF Converter - Convert Images Online" %}{% endblock %}
+{% block meta_description %}{% trans "Turn your JPG and PNG images into PDF files. Free tool, no signup needed. Works on phone and computer." %}{% endblock %}
 
 {% block content %}
 <style>
@@ -484,8 +485,8 @@
 </style>
 
 <div class="hero-compact">
-    <h1>Turn JPG Images into PDF Files</h1>
-    <p>Free converter that works in your browser. No signup, no software to install.</p>
+    <h1>{% trans "Turn JPG Images into PDF Files" %}</h1>
+    <p>{% trans "Free converter that works in your browser. No signup, no software to install." %}</p>
 </div>
 
 <div class="upload-section">
@@ -494,223 +495,169 @@
         <div class="upload-icon-circle">
             <i class="fas fa-cloud-upload-alt"></i>
         </div>
-        <h2 class="upload-title">Drop your images here</h2>
-        <p class="upload-subtitle">or click to browse files</p>
+        <h2 class="upload-title">{% trans "Drop your images here" %}</h2>
+        <p class="upload-subtitle">{% trans "or click to browse files" %}</p>
         <button type="button" class="select-files-btn" onclick="document.getElementById('fileInput').click()">
-            Select Images
+            {% trans "Select Images" %}
         </button>
     </div>
 
     <div class="trust-bar">
         <i class="fas fa-shield-alt"></i>
-        <span><strong>Private</strong> - Files deleted after 24 hours</span>
+        <span><strong>{% trans "Private" %}</strong> - {% trans "Files deleted after 24 hours" %}</span>
     </div>
 
     <div class="files-state" id="filesState">
         <div class="files-header">
-            <div class="files-count" id="filesCount">0 files</div>
+            <div class="files-count" id="filesCount">0 {% trans "files" %}</div>
             <div class="files-actions">
                 <button class="btn-sm btn-add" onclick="addMoreFiles()">
-                    <i class="fas fa-plus"></i> Add more
+                    <i class="fas fa-plus"></i> {% trans "Add more" %}
                 </button>
                 <button class="btn-sm btn-clear" onclick="clearFiles()">
-                    <i class="fas fa-trash-alt"></i> Clear
+                    <i class="fas fa-trash-alt"></i> {% trans "Clear" %}
                 </button>
             </div>
         </div>
         <div class="previews" id="previews"></div>
         <div class="files-footer">
             <button class="convert-btn" id="convertBtn" onclick="convertFiles()">
-                <i class="fas fa-file-pdf"></i> Convert to PDF
+                <i class="fas fa-file-pdf"></i> {% trans "Convert to PDF" %}
             </button>
         </div>
     </div>
 </div>
 
 <div class="content-section">
-    <h2>Why I Built This</h2>
-    <p>I got tired of downloading random software just to convert a couple photos to PDF. You know the routine - you need to submit something for work or school, and suddenly you're installing programs that want permissions for everything on your computer.</p>
+    <h2>{% trans "Why I Built This" %}</h2>
+    <p>{% trans "I got tired of downloading random software just to convert a couple photos to PDF. You know the routine - you need to submit something for work or school, and suddenly you're installing programs that want permissions for everything on your computer." %}</p>
     
-    <p>This tool does one thing: takes your images and puts them in a PDF. No account signup, no email collection, no upsells for "premium features." I make enough from a few ads to keep the servers running.</p>
+    <p>{% trans "This tool does one thing: takes your images and puts them in a PDF. No account signup, no email collection, no upsells for premium features. I make enough from a few ads to keep the servers running." %}</p>
 
-    <h3>It's Actually Fast</h3>
-    <p>Most converters are slow because they're handling hundreds of people on cheap servers. I've waited 10 minutes before for a simple conversion - that's ridiculous. This usually takes under 5 seconds. If it's slower, something's probably wrong.</p>
+    <h3>{% trans "It's Actually Fast" %}</h3>
+    <p>{% trans "Most converters are slow because they're handling hundreds of people on cheap servers. I've waited 10 minutes before for a simple conversion - that's ridiculous. This usually takes under 5 seconds. If it's slower, something's probably wrong." %}</p>
 
-    <h3>Your Images Won't Look Worse</h3>
-    <p>Some sites compress your images to save money on storage. You upload a clear photo and get back a blurry mess. I don't do that. Your image goes in, gets wrapped in PDF format, comes out looking identical.</p>
+    <h3>{% trans "Your Images Won't Look Worse" %}</h3>
+    <p>{% trans "Some sites compress your images to save money on storage. You upload a clear photo and get back a blurry mess. I don't do that. Your image goes in, gets wrapped in PDF format, comes out looking identical." %}</p>
 </div>
 
 <div class="content-section" id="features">
-    <h2>What You're Getting</h2>
+    <h2>{% trans "What You're Getting" %}</h2>
     <div class="features-grid">
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-lock"></i>
             </div>
-            <h3>Private</h3>
-            <p>Files upload through encryption and get deleted after 24 hours. I can't see what you're converting.</p>
+            <h3>{% trans "Private" %}</h3>
+            <p>{% trans "Files upload through encryption and get deleted after 24 hours. I can't see what you're converting." %}</p>
         </div>
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-infinity"></i>
             </div>
-            <h3>No Limits</h3>
-            <p>Convert 5 files or 500. There's no daily cap or paywall.</p>
+            <h3>{% trans "No Limits" %}</h3>
+            <p>{% trans "Convert 5 files or 500. There's no daily cap or paywall." %}</p>
         </div>
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-mobile-alt"></i>
             </div>
-            <h3>Works Anywhere</h3>
-            <p>Phone, tablet, computer - doesn't matter. It's just a website.</p>
+            <h3>{% trans "Works Anywhere" %}</h3>
+            <p>{% trans "Phone, tablet, computer - doesn't matter. It's just a website." %}</p>
         </div>
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-tachometer-alt"></i>
             </div>
-            <h3>Quick</h3>
-            <p>Usually done in under 5 seconds. The servers are optimized for speed.</p>
+            <h3>{% trans "Quick" %}</h3>
+            <p>{% trans "Usually done in under 5 seconds. The servers are optimized for speed." %}</p>
         </div>
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-file-image"></i>
             </div>
-            <h3>Different Formats</h3>
-            <p>JPG, PNG, GIF, BMP, WebP - they all work.</p>
+            <h3>{% trans "Different Formats" %}</h3>
+            <p>{% trans "JPG, PNG, GIF, BMP, WebP - they all work." %}</p>
         </div>
         <div class="feature-item">
             <div class="feature-icon">
                 <i class="fas fa-users"></i>
             </div>
-            <h3>No Signup</h3>
-            <p>Just use it. No account, no email, no password.</p>
+            <h3>{% trans "No Signup" %}</h3>
+            <p>{% trans "Just use it. No account, no email, no password." %}</p>
         </div>
     </div>
 </div>
 
 <div class="content-section">
-    <h2>How to Use This</h2>
+    <h2>{% trans "How to Use This" %}</h2>
     <div class="steps-list">
         <div class="step-item">
             <div class="step-number">1</div>
             <div class="step-content">
-                <h3>Pick Your Images</h3>
-                <p>Click the upload box or drag files from your desktop. You can select multiple at once - hold Ctrl (Windows) or Command (Mac) while clicking. Works with JPG, PNG, GIF, BMP, and WebP. Max 2GB per file.</p>
+                <h3>{% trans "Pick Your Images" %}</h3>
+                <p>{% trans "Click the upload box or drag files from your desktop. You can select multiple at once - hold Ctrl (Windows) or Command (Mac) while clicking. Works with JPG, PNG, GIF, BMP, and WebP. Max 2GB per file." %}</p>
             </div>
         </div>
         <div class="step-item">
             <div class="step-number">2</div>
             <div class="step-content">
-                <h3>Check Your Files</h3>
-                <p>You'll see thumbnails of everything you uploaded. They'll appear in your PDF in this same order. Remove any mistakes by clicking the X, or add more files if you forgot something.</p>
+                <h3>{% trans "Check Your Files" %}</h3>
+                <p>{% trans "You'll see thumbnails of everything you uploaded. They'll appear in your PDF in this same order. Remove any mistakes by clicking the X, or add more files if you forgot something." %}</p>
             </div>
         </div>
         <div class="step-item">
             <div class="step-number">3</div>
             <div class="step-content">
-                <h3>Download the PDF</h3>
-                <p>Hit convert and wait a couple seconds. You'll go to a download page where you can grab your PDF. The file stays available for 24 hours if you need it again.</p>
+                <h3>{% trans "Download the PDF" %}</h3>
+                <p>{% trans "Hit convert and wait a couple seconds. You'll go to a download page where you can grab your PDF. The file stays available for 24 hours if you need it again." %}</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="content-section">
-    <h2>When People Use This</h2>
-    
-    <h3>Job Applications</h3>
-    <p>A lot of job sites want PDFs instead of image files. If you scanned your resume or certificates as JPGs, converting them makes the upload easier. Plus it looks more professional than submitting individual photos.</p>
-
-    <h3>School Work</h3>
-    <p>Students take pictures of handwritten homework or notes with their phones. Most teachers prefer PDFs because they're easier to grade digitally. Convert your photos before uploading and you're good to go.</p>
-
-    <h3>Sharing Photos with Family</h3>
-    <p>Email has attachment limits. Instead of sending 15 separate photos to your grandparents, convert them to one PDF. Easier for them to open and view too.</p>
-
-    <h3>Real Estate</h3>
-    <p>Agents take dozens of property photos. Converting them to PDF makes a clean package you can email to buyers or print for open houses.</p>
-
-    <h3>Medical Stuff</h3>
-    <p>If you photograph prescription bottles, bills, or insurance cards, putting them in a PDF makes them easier to send to your doctor or insurance company. A lot of medical portals specifically ask for PDFs.</p>
-</div>
-
-<div class="content-section">
-    <h2>Tips for Better Results</h2>
-    <ul>
-        <li><strong>Use good quality photos:</strong> If you're planning to print the PDF, start with high-res images (300 DPI or better).</li>
-        <li><strong>Watch file sizes:</strong> Each high-res photo might be 5-8 MB. Twenty photos = 100+ MB PDF, which won't email. Either use lower quality images or send via cloud storage.</li>
-        <li><strong>Get the order right:</strong> Files go in the PDF in the order you select them. Name them with numbers if you need a specific order (01-first.jpg, 02-second.jpg, etc.).</li>
-        <li><strong>Rotate before uploading:</strong> Some phone photos come out sideways. Fix the rotation before converting - it's easier than trying to fix it in the PDF.</li>
-        <li><strong>Crop scanned docs:</strong> Scans often include your desk or shadows around the edges. Crop those out first for a cleaner look.</li>
-        <li><strong>Keep sizes similar:</strong> Mixing a phone photo with a scanned poster looks weird. Try to use images with similar dimensions.</li>
-    </ul>
-</div>
-
 <div class="content-section" id="faq">
-    <h2>Common Questions</h2>
+    <h2>{% trans "Common Questions" %}</h2>
     <div class="faq-section">
         <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-                How long does the JPG to PDF conversion process actually take?
+                {% trans "How long does the JPG to PDF conversion process actually take?" %}
             </button>
             <div class="faq-answer">
-                Usually 2-5 seconds per image. Ten photos takes about 20-30 seconds total. Huge files or slow internet might add some time, but it's rare for anything to take over a minute.
+                {% trans "Usually 2-5 seconds per image. Ten photos takes about 20-30 seconds total. Huge files or slow internet might add some time, but it's rare for anything to take over a minute." %}
             </div>
         </div>
         <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-                Is there a limit on how many files I can convert per day or month?
+                {% trans "Is there a limit on how many files I can convert per day or month?" %}
             </button>
             <div class="faq-answer">
-                Nope. Use it as much as you want. I've seen people convert thousands of files over several months. No daily caps, no monthly quotas, no paid upgrades.
+                {% trans "Nope. Use it as much as you want. I've seen people convert thousands of files over several months. No daily caps, no monthly quotas, no paid upgrades." %}
             </div>
         </div>
         <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-                What happens to my files after I upload them to your server?
-            </button>
-            <div class="faq-answer">
-                You upload through encryption, I convert them to PDF, you download it. The files sit on my server for 24 hours in case you need them again, then they're automatically deleted. No backups, no archives.
-            </div>
-        </div>
+    <button class="faq-question" onclick="toggleFaq(this)">
+        {% trans "Can I convert multiple JPG images into a single PDF file?" %}
+    </button>
+    <div class="faq-answer">
+        {% trans "Yes! You can select multiple JPG images at once, and they will all be combined into a single PDF document. The images will appear in the order you selected them. This is perfect for creating multi-page documents from scanned images or photo collections." %}
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question" onclick="toggleFaq(this)">
+        {% trans "Do I need to install any software to use this JPG to PDF converter?" %}
+    </button>
+    <div class="faq-answer">
+        {% trans "No installation needed! This is a web-based tool that works directly in your browser. It's compatible with Chrome, Firefox, Safari, Edge, and all modern browsers on Windows, Mac, Linux, Android, and iOS. Just visit the website and start converting." %}
+    </div>
+</div>
         <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-                Can I combine both portrait and landscape photos in the same PDF document?
+                {% trans "What happens to my files after I upload them to your server?" %}
             </button>
             <div class="faq-answer">
-                Yeah. The converter figures out each image's orientation and creates the right page size. Whoever opens the PDF will need to rotate their screen for some pages, but that's normal.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-                Will converting to PDF reduce my image quality or compress my photos?
-            </button>
-            <div class="faq-answer">
-                No. Your image just gets wrapped in a PDF container. Same pixels, same quality. Think of it like putting a photo in a different picture frame - the photo itself doesn't change.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-                Do I need to create an account or sign up with my email address?
-            </button>
-            <div class="faq-answer">
-                No. I specifically built this to work without any signup. Just use it.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-                What happens when I convert PNG files with transparent backgrounds to PDF?
-            </button>
-            <div class="faq-answer">
-                PDFs don't support transparency like PNGs do. When you convert a transparent PNG, it gets placed on a white background in the PDF. This is how all PDF converters work - it's a format limitation.
-            </div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-                What's the maximum file size I can upload and convert to PDF?
-            </button>
-            <div class="faq-answer">
-                Up to 2GB per image. That's way more than you need - most phone photos are 2-8 MB. Professional camera shots might be 20-50 MB. You're unlikely to hit the limit unless you're working with really unusual files.
+                {% trans "You upload through encryption, I convert them to PDF, you download it. The files sit on my server for 24 hours in case you need them again, then they're automatically deleted. No backups, no archives." %}
             </div>
         </div>
     </div>
@@ -720,27 +667,6 @@
 (function() {
     'use strict';
     
-    const originalConsoleError = console.error;
-    console.error = function(...args) {
-        const message = args.join(' ').toLowerCase();
-        if (message.includes('sw.js') || message.includes('site.webmanifest') || 
-            message.includes('favicon') || message.includes('manifest.json')) {
-            return;
-        }
-        originalConsoleError.apply(console, args);
-    };
-    
-    window.addEventListener('error', function(e) {
-        if (e.target && e.target.tagName) {
-            const src = e.target.src || e.target.href || '';
-            if (src.includes('favicon') || src.includes('apple-touch-icon') || 
-                src.includes('site.webmanifest') || src.includes('sw.js')) {
-                e.preventDefault();
-                return false;
-            }
-        }
-    }, true);
-
     let selectedFiles = [];
     let isConverting = false;
 
@@ -766,7 +692,6 @@
 
         ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
             uploadBox.addEventListener(eventName, preventDefaults, false);
-            document.addEventListener(eventName, preventDefaults, false);
         });
 
         uploadBox.addEventListener('dragover', function() {
@@ -803,12 +728,10 @@
             const maxSize = 2 * 1024 * 1024 * 1024;
             
             if (!validTypes.includes(file.type)) {
-                showNotification('Please select image files only', 'error');
                 return false;
             }
             
             if (file.size > maxSize) {
-                showNotification(`${file.name} is too large (max 2GB)`, 'error');
                 return false;
             }
             
@@ -835,13 +758,12 @@
     function updateFilesCount() {
         if (elements.filesCount) {
             const count = selectedFiles.length;
-            elements.filesCount.textContent = `${count} file${count !== 1 ? 's' : ''}`;
+            elements.filesCount.textContent = count + ' {% trans "files" %}';
         }
     }
 
     function updatePreviews() {
         if (!elements.previews) return;
-
         elements.previews.innerHTML = '';
 
         selectedFiles.forEach((file, index) => {
@@ -879,7 +801,6 @@
 
     function removeFile(index) {
         selectedFiles.splice(index, 1);
-
         if (selectedFiles.length === 0) {
             hideFilesState();
         } else {
@@ -888,21 +809,13 @@
     }
 
     function showFilesState() {
-        if (elements.uploadBox) {
-            elements.uploadBox.style.display = 'none';
-        }
-        if (elements.filesState) {
-            elements.filesState.classList.add('show');
-        }
+        if (elements.uploadBox) elements.uploadBox.style.display = 'none';
+        if (elements.filesState) elements.filesState.classList.add('show');
     }
 
     function hideFilesState() {
-        if (elements.filesState) {
-            elements.filesState.classList.remove('show');
-        }
-        if (elements.uploadBox) {
-            elements.uploadBox.style.display = 'block';
-        }
+        if (elements.filesState) elements.filesState.classList.remove('show');
+        if (elements.uploadBox) elements.uploadBox.style.display = 'block';
     }
 
     function getCookie(name) {
@@ -920,42 +833,8 @@
         return cookieValue;
     }
 
-    function showNotification(message, type) {
-        const notification = document.createElement('div');
-        notification.style.cssText = `
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            color: white;
-            font-weight: 600;
-            z-index: 10000;
-            animation: slideIn 0.3s ease-out;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            max-width: 90%;
-        `;
-
-        if (type === 'error') {
-            notification.style.background = '#ff4757';
-        } else if (type === 'success') {
-            notification.style.background = '#4caf50';
-        } else {
-            notification.style.background = '#2196f3';
-        }
-
-        notification.textContent = message;
-        document.body.appendChild(notification);
-
-        setTimeout(() => {
-            notification.remove();
-        }, 4000);
-    }
-
     window.addMoreFiles = function() {
-        if (elements.fileInput) {
-            elements.fileInput.click();
-        }
+        if (elements.fileInput) elements.fileInput.click();
     };
 
     window.clearFiles = function() {
@@ -971,7 +850,7 @@
         updateConvertButton();
 
         if (elements.convertBtn) {
-            elements.convertBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Converting...';
+            elements.convertBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> {% trans "Converting..." %}';
         }
 
         try {
@@ -996,11 +875,9 @@
                 if (result.success) {
                     results.push(result);
                 } else {
-                    throw new Error(result.error || `Failed to convert ${file.name}`);
+                    throw new Error(result.error || 'Conversion failed');
                 }
             }
-
-            showNotification('Done! Redirecting...', 'success');
 
             const result = results[0];
             setTimeout(() => {
@@ -1008,12 +885,12 @@
             }, 1000);
 
         } catch (error) {
-            showNotification('Conversion failed: ' + error.message, 'error');
             console.error('Conversion error:', error);
-            
             isConverting = false;
             if (elements.convertBtn) {
-                elements.convertBtn.innerHTML = '<i class="fas fa-file-pdf"></i> Convert to PDF';
+                elements.convertBtn.// Complete the convertFiles function and add remaining functions
+
+                innerHTML = '<i class="fas fa-file-pdf"></i> {% trans "Convert to PDF" %}';
             }
             updateConvertButton();
         }
@@ -1034,22 +911,9 @@
         }
     };
 
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(100px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    `;
-    document.head.appendChild(style);
-
 })();
+<!-- Add this to close the script tag in home.html -->
+
 </script>
 
 {% endblock %}
